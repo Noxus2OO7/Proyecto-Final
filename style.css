@@ -44,33 +44,35 @@ main {
 
 .Pokemon-slot {
     display: flex;
-    background-color: bisque;
+    background: linear-gradient(rgba(0, 0, 255, 0), rgb(29, 173, 0));
     padding: 10px;
     border-radius: 30px;
     flex-direction: column;
     text-align: center;
+    color: white;
+    
 }
 
 .Pokemon-tipos {
     display: flex;
     text-align: center;
-    margin-left: 25%;
-    gap: 30px;
+    
+    gap: 15px;
 }
 
 .Pokemon-datos {
     display: flex;
     text-align: center;
-    margin-left: 25%;
     
-    gap: 30px;
+    
+    gap: 15px;
 }
 
 .Datos-P {
     display: flex;
 text-align: center;
-margin-left: 25%;
-gap: 30px;
+gap: 88px;
+margin-top: -10px;
 }
 
 
@@ -85,4 +87,20 @@ gap: 30px;
 
 .Pokemon-slot div{
     padding: 5px;
+}
+
+.Pokemon-slot h3{
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot h3 img{
+    height: 25px;
+}
+
+
+main{
+    margin-left: 500px;
 }
