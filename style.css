@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: rgba(228, 228, 228, 0);
+    width: 100%;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.Pokemon-select {
+    width: 100%;
+    display: flex;
+    background-color: rgba(133, 196, 16, 0.863);
+    height: 600px;
+    border-radius: 0 0 15% 15%;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    flex-direction: column;
+}
+
+
+main {
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+}
+
+
+.Pokemon-slot img {
+    height: 200px;
+
+}
+
+
+.Pokemon-slot {
+    display: flex;
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Pokemon-tipos {
+    display: flex;
+    text-align: center;
+    margin-left: 25%;
+    gap: 30px;
+}
+
+.Pokemon-datos {
+    display: flex;
+    text-align: center;
+    margin-left: 25%;
+    
+    gap: 30px;
+}
+
+.Datos-P {
+    display: flex;
+text-align: center;
+margin-left: 25%;
+gap: 30px;
+}
+
+
+
+.tipo1{
+    background-color: rgb(0, 255, 13);
+}
+
+.tipo2{
+    background-color: blueviolet;
+}
+
+.Pokemon-slot div{
+    padding: 5px;
+}
