@@ -32,11 +32,13 @@ body {
 
 
 main {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 18, 18, 0);
     display: flex;
     gap: 30px;
-    justify-content: center;
+    flex-wrap: wrap;
     width: 900px;
+    max-width: 900px;
+    height: 100vh;
 }
 
 
@@ -48,14 +50,17 @@ margin-top: 20px;
 
 .Pokemon-slot {
     display: flex;
-    background: linear-gradient(rgba(0, 0, 255, 0), rgb(29, 173, 0));
+    
     padding: 10px;
     border-radius: 30px;
     flex-direction: column;
     text-align: center;
     color: white;
-    height: 400px;
-    
+    height: 380px;
+    border: solid 1px #ffffff;
+     background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(0, 196, 26)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    transition: all 0.3s;
 }
 
 .Pokemon-tipos {
@@ -75,7 +80,8 @@ margin-top: 20px;
 .Datos-P {
     display: flex;
 text-align: center;
-margin-top: -20px;
+margin-top: -15px;
+gap: 5px;
 }
 
 
@@ -127,3 +133,161 @@ text-align: center;
 .foto{
     height: 900px;
 }
+.Pokemon-slot-fuego {
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+     background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(255, 30, 0, 0.864)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+
+}
+
+.Pokemon-slot-fuego {
+    display: flex;
+     
+
+}
+
+
+.Pokemon-slot-fuego div{
+    padding: 5px;
+}
+
+.Pokemon-slot-fuego h3{
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-fuego h3 img{
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-fuego h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-fuego img {
+    height: 200px;
+margin-top: 20px;
+}
+
+.Pokemon-slot-fuego .tipo1{
+    background-color: rgba(255, 1, 1, 0.622);
+    margin-right: 15px;
+    margin-left: 5px;
+   
+}
+
+.Pokemon-slot-fuego .tipo2{
+    background-color: rgb(67, 155, 255);
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+
+
+.Pokemon-slot-agua {
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+     background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 123, 255, 0.864)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+
+}
+
+
+.Pokemon-slot-agua div{
+    padding: 5px;
+}
+
+.Pokemon-slot-agua h3{
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-agua h3 img{
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-agua h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-agua img {
+    height: 200px;
+margin-top: 20px;
+}
+
+.Pokemon-slot-agua .tipo1{
+    background-color: rgba(97, 115, 255, 0.622);
+    margin-right: 15px;
+    margin-left: 5px;
+   
+}
+
+.Pokemon-slot-agua .tipo2{
+    background-color: rgb(67, 155, 255);
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Chambea kevin */
+
+
