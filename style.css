@@ -402,7 +402,67 @@ padding: 2px;
 
 
 
+.Pokemon-slot-weedle {
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+     background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(45, 0, 243)), url(./Imagenes/pokeball-blanca.png);
+ background-repeat:no-repeat;
+    width: 255px;
+    transition: all 0.3s;
 
+}
+
+.Pokemon-slot-weedle {
+    display: flex;
+
+}
+
+
+.Pokemon-slot-weedle div{
+    padding: 5px;
+}
+
+.Pokemon-slot-weedle h3{
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-weedle h3 img{
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-weedle h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-weedle img {
+    height: 200px;
+margin-top: 20px;
+}
+
+.Pokemon-slot-weedle .tipo1{
+    background-color: rgba(121, 164, 73);
+    margin-right: 15px;
+    margin-left: 5px;
+   
+}
+
+.Pokemon-slot-weedle .tipo2{
+    background-color: rgb(255, 0, 187);
+    margin-right: 15px;
+    margin-left: 5px;
+}
 
 
 
