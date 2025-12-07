@@ -5,19 +5,22 @@
 }
 
 header {
-    background-color: rgba(228, 228, 228, 0);
+    background-color: rgba(0, 0, 0, 0);
     width: 100%;
     display: flex;
-    height: 60px;
+    height: 600px;
     justify-content: center;
     padding: 10px;
 }
 
+header img{
+height: 100px;
+}
 
 .Pokemon-select {
     width: 100%;
     display: flex;
-    background-color: rgba(133, 196, 16, 0.863);
+    background-color: rgba(255, 255, 255, 0.863);
     height: 600px;
     border-radius: 0 0 15% 15%;
 }
@@ -133,6 +136,8 @@ text-align: center;
 .foto{
     height: 900px;
 }
+
+
 .Pokemon-slot-fuego {
     display: flex;
     padding: 10px;
@@ -145,12 +150,12 @@ text-align: center;
      background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(255, 30, 0, 0.864)), url(./Imagenes/pokeball-blanca.png);
     background-repeat: no-repeat;
     width: 255px;
+    transition: all 0.3s;
 
 }
 
 .Pokemon-slot-fuego {
     display: flex;
-     
 
 }
 
@@ -195,6 +200,12 @@ margin-top: 20px;
     margin-left: 5px;
 }
 
+.charizard{
+    width: 255px;
+    margin-left: 40px;
+}
+
+
 
 
 .Pokemon-slot-agua {
@@ -209,7 +220,7 @@ margin-top: 20px;
      background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 123, 255, 0.864)), url(./Imagenes/pokeball-blanca.png);
     background-repeat: no-repeat;
     width: 255px;
-
+transition: all 0.3s;
 }
 
 
@@ -235,10 +246,7 @@ margin-top: 20px;
     margin-bottom: 10px;
 }
 
-.Pokemon-slot-agua img {
-    height: 200px;
-margin-top: 20px;
-}
+
 
 .Pokemon-slot-agua .tipo1{
     background-color: rgba(97, 115, 255, 0.622);
@@ -253,8 +261,16 @@ margin-top: 20px;
     margin-left: 5px;
 }
 
+.Squirtle{
+ width: 150px;
+ margin: auto;
+margin-bottom: 15px;
+}
 
 
+.Pokemon-slot-agua h2{
+ margin-top: -20px;
+}
 
 
 
@@ -289,5 +305,27 @@ margin-top: 20px;
 
 
 /* Chambea kevin */
+.Pokemon-slot:hover{
+background-color: rgb(162, 255, 0);
+cursor: pointer;
+transform: translate3d(0px,0px,0px) scale3d(0.9,0.9,1)
+rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
+transform-style: preserve-3d;
+}
 
+.Pokemon-slot-fuego:hover{
+    background-color: rgb(255, 77, 0);
+cursor: pointer;
+transform: translate3d(0px,0px,0px) scale3d(0.9,0.9,1)
+rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
+transform-style: preserve-3d;
+}
+
+.Pokemon-slot-agua:hover{
+    background-color: rgb(16, 113, 115);
+cursor: pointer;
+transform: translate3d(0px,0px,0px) scale3d(0.9,0.9,1)
+rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
+transform-style: preserve-3d;
+}
 
