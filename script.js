@@ -11,4 +11,15 @@ const ataque_s = document.getElementById ("ataque.s")
 const defensa_s = document.getElementById ("defensa.s")
 
 
-const ivysaur_slot = document.getElementById ("ivysaur_slot")
+const ivysaur_slot = document.getElementById ("ivysaur_slot")   
+const pokemon_foto = document.getElementById ("foto-pokemon")
+
+function cambio() {
+
+pokemon_foto.src = "./imagesnes/ivysaur-real.png";
+
+}
+
+ivysaur_slot.onclick = cambio(){
+pokemon_foto.src = "./imagesnes/ivysaur-real.png"
+}
