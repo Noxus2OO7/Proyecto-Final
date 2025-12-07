@@ -27,7 +27,7 @@
 
         <h1>Descripción en la Pokedex</h1>
         
-              <h3>Bulbasaur es un Pokémon inicial de tipo Planta/Veneno, conocido por el bulbo que tiene en su lomo, plantado al
+              <h3 id="descripcion-pokemon">Bulbasaur es un Pokémon inicial de tipo Planta/Veneno, conocido por el bulbo que tiene en su lomo, plantado al
                 nacer, que crece absorbiendo energía solar y le permite pasar días sin comer, además de usarlo para ataques como
                 Drenadoras o Rayo Solar. Se asemeja a un anfibio con piel turquesa y manchas verdes, grandes ojos rojos y tres
                 garras en cada pata, siendo atraído por fuentes de agua y jardines, y evolucionando a Ivysaur y luego a
@@ -89,7 +89,7 @@
       </div>
     </div>
 
-    <div class="pokedex-foto" id="pokedex-fotos">
+    <div class="pokedex-foto" >
       <img src="./Imagenes/pokeball-blanca.png" alt="" id="foto-pokemon">
     </div>
 
@@ -101,7 +101,7 @@
 
     <!-- inicio de la Linea evolutiva de bulbasaur -->
 
-    <div class="Pokemon-slot">
+    <div class="Pokemon-slot"onclick="cambiarDato('./Imagenes/bulbasaur4.png')">
       <img src="./Imagenes/bulbasaur4.png" alt="">
       <h2>•Bulbasaur•</h2>
       <div class="Pokemon-tipos">
@@ -120,7 +120,7 @@
       </div>
     </div>
 
-    <div class="Pokemon-slot" id="ivysaur_slot">
+    <div class="Pokemon-slot" onclick="cambiarDato('./Imagenes/ivysaur-real.png', 'ivysaur', '120px','20px', '90px', '200px','100px','70px')">
       <img src="./Imagenes/ivysaur-real.png" alt="" class="ivysaur">
       <h2>•Ivysaur•</h2>
       <div class="Pokemon-tipos">
@@ -139,7 +139,7 @@
       </div>
     </div>
 
-    <div class="Pokemon-slot">
+    <div class="Pokemon-slot" onclick="cambiarDato('./Imagenes/venasaur-real.png', 'pikachu', '180px','80px', '70px', '120px','300px','200px')">
       <img src="./Imagenes/venasaur-real.png" alt="">
       <h2>•Venasaur•</h2>
       <div class="Pokemon-tipos">

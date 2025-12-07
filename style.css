@@ -62,11 +62,14 @@ background-image: url(./Imagenes/fondo-texto-d3.jpg);
     margin-left: 50px;
 }
 
-.pokedex-foto{
-    height: 460px;
-    background-color: #ffffff00;
+
+
+.pokedex-foto img{
+    height: 400px;
+    background-color: #00000000;
     width: auto;
-    margin-left: 100px;
+    margin-left: 250px;
+    margin-top: 70px;
 }
 
 .Pokemon-select {

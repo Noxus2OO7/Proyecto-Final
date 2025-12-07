@@ -1,25 +1,39 @@
-const pokemon_select = document.getElementById ("pokemon-select")
-const pokemon_info = document.getElementById ("pokemon-info")
-const pokemon_texto = document.getElementById ("pokemon-texto")
-const barra_dentro = document.getElementById ("barra-dentro")
 
+const pokemon_foto = document.getElementById("foto-pokemon");
+const descripcion = document.getElementById("descripcion-pokemon");
+const barra_PS = document.getElementById("PS");
+const barra_ataque = document.getElementById("ataque");
+const barra_defensa = document.getElementById("defensa");
+const barra_ataque_s = document.getElementById("ataque.s");
+const barra_defensa_s = document.getElementById("defensa.s");
+const barra_velocidad = document.getElementById("Velocidad");
 
-const ataque = document.getElementById ("ataque")
-const ps = document.getElementById ("PS")
-const defensa = document.getElementById ("defensa")
-const ataque_s = document.getElementById ("ataque.s")
-const defensa_s = document.getElementById ("defensa.s")
+function cambiarDato(urlImagen, descripcionTexto, psValue, ataqueValue, defensaValue, ataqueSValue, defensaSValue, velocidadValue) {
+    pokemon_foto.src = urlImagen;
+    if (descripcionTexto !== undefined) descripcion.textContent = descripcionTexto;
 
-
-const ivysaur_slot = document.getElementById ("ivysaur_slot")   
-const pokemon_foto = document.getElementById ("foto-pokemon")
-
-function cambio() {
-
-pokemon_foto.src = "./imagesnes/ivysaur-real.png";
-
-}
-
-ivysaur_slot.onclick = cambio(){
-pokemon_foto.src = "./imagesnes/ivysaur-real.png"
+    if (psValue !== undefined) {
+      barra_PS.style.width = psValue;
+      barra_PS.textContent = psValue.replace(/px$/,'');
+    }
+    if (ataqueValue !== undefined) {
+      barra_ataque.style.width = ataqueValue;
+      barra_ataque.textContent = ataqueValue.replace(/px$/,'');
+    }
+    if (defensaValue !== undefined) {
+      barra_defensa.style.width = defensaValue;
+      barra_defensa.textContent = defensaValue.replace(/px$/,'');
+    }
+    if (ataqueSValue !== undefined) {
+      barra_ataque_s.style.width = ataqueSValue;
+      barra_ataque_s.textContent = ataqueSValue.replace(/px$/,'');
+    }
+    if (defensaSValue !== undefined) {
+      barra_defensa_s.style.width = defensaSValue;
+      barra_defensa_s.textContent = defensaSValue.replace(/px$/,'');
+    }
+    if (velocidadValue !== undefined) {
+      barra_velocidad.style.width = velocidadValue;
+      barra_velocidad.textContent = velocidadValue.replace(/px$/,'');
+    }
 }
