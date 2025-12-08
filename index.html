@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokedex</title>
   <link rel="stylesheet" href="./style.css">
-  <script src="./script.js"></script>
+  <script src="./script.js" defer></script>
   <link rel="icon" type="image/png" href="Imagenes/Pokedex-PNG-Transparent-200x200.png" sizes="16x16" />
 </head>
 
@@ -19,73 +19,78 @@
 
 
 
-  <div class="Pokemon-select" id="Pokemon-select">
+  <div class="Pokemon-select" id="pokemon-select">
 
-    <div class="Pokedex-info">
-      <h1>Bulbasaur es un Pokémon inicial de tipo Planta/Veneno, conocido por el bulbo que tiene en su lomo, plantado al
-        nacer, que crece absorbiendo energía solar y le permite pasar días sin comer, además de usarlo para ataques como
-        Drenadoras o Rayo Solar. Se asemeja a un anfibio con piel turquesa y manchas verdes, grandes ojos rojos y tres
-        garras en cada pata, siendo atraído por fuentes de agua y jardines, y evolucionando a Ivysaur y luego a
-        Venusaur. </h1>
+    <div class="Pokedex-info" id="pokemon-info">
+      
+      <div class="Pokedex-texto" id="pokemon-texto">
+
+        <h1>Descripción en la Pokedex</h1>
+        
+              <h3>Bulbasaur es un Pokémon inicial de tipo Planta/Veneno, conocido por el bulbo que tiene en su lomo, plantado al
+                nacer, que crece absorbiendo energía solar y le permite pasar días sin comer, además de usarlo para ataques como
+                Drenadoras o Rayo Solar. Se asemeja a un anfibio con piel turquesa y manchas verdes, grandes ojos rojos y tres
+                garras en cada pata, siendo atraído por fuentes de agua y jardines, y evolucionando a Ivysaur y luego a
+                Venusaur. </h3>
+      </div>
 
 
-      <div class="pokedex-cat">
+      <div class="pokedex-cat" id="pokemon-cat">
 
 
         <h3>PS:</h3>
 
         <div class="barra-fuera">
-          <div class="barra-dentro">
-            <p>100</p>
+          <div class="barra-dentro" id="barra-dentro">
+            <p id="PS">100</p>
           </div>
         </div>
 
         <h3>Ataque: </h3>
 
          <div class="barra-fuera">
-          <div class="barra-dentro">
-            <p>100</p>
+          <div class="barra-dentro" id="barra-dentro">
+            <p id="ataque">100</p>
           </div>
         </div>
 
         <h3>Defensa: </h3>
 
          <div class="barra-fuera">
-          <div class="barra-dentro">
-            <p>100</p>
+          <div class="barra-dentro" id="barra-dentro">
+            <p id="defensa">100</p>
           </div>
         </div>
 
         <h3>Ataque.S: </h3>
 
          <div class="barra-fuera">
-          <div class="barra-dentro">
-            <p>100</p>
+          <div class="barra-dentro" id="barra-dentro">
+            <p id="ataque.s">100</p>
           </div>
         </div>
         
         <h3>Defensa.S: </h3>
 
          <div class="barra-fuera">
-          <div class="barra-dentro">
-            <p>100</p>
+          <div class="barra-dentro" id="barra-dentro">
+            <p id="defensa.s">100</p>
           </div>
         </div>
 
         <h3>Velocidad: </h3>
 
          <div class="barra-fuera">
-          <div class="barra-dentro">
-            <p>100</p>
+          <div class="barra-dentro" id="barra-dentro">
+            <p id="Velocidad">100</p>
           </div>
         </div>
 
       </div>
     </div>
 
-    <div class="pokedex-foto">
-
-      <img src="./Imagenes/bulbasaur4.png" alt="">
+    <div class="pokedex-foto" id="pokedex-fotos">
+      <img src="./Imagenes/pokeball-blanca.png" alt="" id="foto-pokemon">
     </div>
 
 
@@ -115,7 +120,7 @@
       </div>
     </div>
 
-    <div class="Pokemon-slot">
+    <div class="Pokemon-slot" id="ivysaur_slot">
       <img src="./Imagenes/ivysaur-real.png" alt="" class="ivysaur">
       <h2>•Ivysaur•</h2>
       <div class="Pokemon-tipos">
@@ -274,10 +279,10 @@
       </div>
     </div>
 
-    <!-- Final de la linea evolutiva de blastoise e inicio de la de butterfree -->
+    <!-- Final de la liena evolutiva de blastoise e inicio de la de butterfree -->
 
     <div class="Pokemon-slot-bicho">
-      <img src="./Imagenes/caterpie2.png" alt="">
+      <img src="./Imagenes/caterpie2.png" alt="" class="caterpie">
       <h2>•Caterpie•</h2>
       <div class="Pokemon-tipos">
         <h3 class="tipo1"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
@@ -324,7 +329,7 @@
         <div class="Pokemon-datos">
           <h3>1,1 M</h3>
           <h3>32,0 KG</h3>
-        </div>
+        </div>              
         <div class="Datos-P">
           <h3>Altura</h3>
           <h3>Peso</h3>
@@ -332,78 +337,18 @@
       </div>
     </div>
 
-    <!-- final de la linea evolutiva de butterfree e inicio de la de weedle -->
+    <!-- final de la linea evolutiva de butterfree e inicio de la de beedrill -->
 
 <div class="Pokemon-slot-weedle">
-      <img src="./Imagenes/WEEDLE.png" alt="">
-      <h2>•weedle•</h2>
+      <img src="./Imagenes/caterpie2.png" alt="" class="caterpie">
+      <h2>•Caterpie•</h2>
       <div class="Pokemon-tipos">
         <h3 class="tipo1"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/Veneno_icono.png" alt="" class="Veneno">Veneno</h3>
-      </div>
-      <div class="Datos-todo">
-        <div class="Pokemon-datos">
-          <h3>0,3 M</h3>
-          <h3>3,2 KG</h3>
-        </div>
-        <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="Pokemon-slot-weedle">
-      <img src="./Imagenes/Kakuna.png" alt="">
-      <h2>•Kakuna•</h2>
-      <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/Veneno_icono.png" alt="" class="Veneno">Veneno</h3>
-      </div>
-      <div class="Datos-todo">
-        <div class="Pokemon-datos">
-          <h3>0,6 M</h3>
-          <h3>10,0 KG</h3>
-        </div>
-        <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
-        </div>
-      </div>
-    </div>
-  
-    <div class="Pokemon-slot-weedle">
-      <img src="./Imagenes/Beedrill-Pokemon-PNG-HD-Images.png" alt="">
-      <h2>•Beedril•</h2>
-      <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/Veneno_icono.png" alt="" class="Veneno">Veneno</h3>
-      </div>
-      <div class="Datos-todo">
-        <div class="Pokemon-datos">
-          <h3>1.0 M</h3>
-          <h3>29.5 KG</h3>
-        </div>
-        <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
-        </div>
-      </div>
-    </div>
-
-<!-- Final de la linea evolutiva de beedril e inicio de la de Pidgey -->
-
-    <div class="Pokemon-slot-normal">
-      <img src="./Imagenes/Pidgey.png" alt="">
-      <h2>•Pidgey•</h2>
-      <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo-normal.png" alt="">Bicho</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/tipo_volador.png" alt="" class="Volador">Volador</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
           <h3>0.3 M</h3>
-          <h3>1,8 KG</h3>
+          <h3>2.9 KG</h3>
         </div>
         <div class="Datos-P">
           <h3>Altura</h3>
@@ -412,24 +357,9 @@
       </div>
     </div>
 
-    <div class="Pokemon-slot-normal">
-      <img src="./Imagenes/pidgeotto.png" alt="">
-      <h2>•Pidgeotto•</h2>
-      <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo-normal.png" alt="">Bicho</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/tipo_volador.png" alt="" class="Volador">Volador</h3>
-      </div>
-      <div class="Datos-todo">
-        <div class="Pokemon-datos">
-          <h3>1,1 M</h3>
-          <h3>30,0 KG</h3>
-        </div>
-        <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
-        </div>
-      </div>
-    </div>
+
+
+
 
     <div class="Pokemon-slot-normal">
       <img src="./Imagenes/Pidgeot.png" alt="">
