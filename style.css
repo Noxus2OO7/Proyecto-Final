@@ -456,6 +456,7 @@ main {
     width: 100%;
     padding: 2px;
     border-radius: 10px;
+     width: 300px;
 }
 
 .barra-dentro p {
@@ -467,10 +468,7 @@ main {
 
 }
 
-.barra-dentro {
 
-    width: 300px;
-}
 
 .Pokemon-slot-weedle {
     display: flex;
