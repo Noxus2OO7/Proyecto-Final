@@ -590,7 +590,7 @@ main {
     color: white;
     height: 380px;
     border: solid 1px #ffffff;
-     background: linear-gradient(rgba(0, 0, 255, 0.3), blueviolet), url(./Imagenes/pokeball-blanca.png);
+     background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(168, 76, 214)), url(./Imagenes/pokeball-blanca.png);
     background-repeat:no-repeat;
     width: 255px;
     transition: all 0.3s;
@@ -631,18 +631,17 @@ margin-top: 20px;
 }
 
 .Pokemon-slot-veneno .tipo1{
-    background-color: blueviolet;
+    background-color: rgb(168, 76, 214);
     margin-right: 15px;
     margin-left: 5px;
    
 }
 
 .Pokemon-slot-veneno .tipo2{
-    background-color: rgb(67, 155, 255);
+    background-color: rgb(231, 114, 53);
     margin-right: 15px;
     margin-left: 5px;
 }
-
 
 
 .anterior {
@@ -681,8 +680,118 @@ margin-top: 20px;
     margin: 30px;
 }
 
+.Pokemon-slot-electrico{
+
+        display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(240, 233, 13, 0.881)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+
+.Pokemon-slot-electrico {
+    display: flex;
+
+}
 
 
+.Pokemon-slot-electrico div {
+    padding: 5px;
+}
+
+.Pokemon-slot-electrico h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-electrico h3 img {
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-electrico h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-electrico img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.Pokemon-slot-electrico .tipo1 {
+    background-color: rgba(255, 255, 29, 0.822);
+    margin-right: 16px;
+    margin-left: 5px;
+
+}
+
+.Pokemon-slot-Tierra{
+        display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(231, 114, 53)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+
+.Pokemon-slot-Tierra{
+    display: flex;
+
+}
+
+
+.Pokemon-slot-Tierra div {
+    padding: 5px;
+}
+
+.Pokemon-slot-Tierra h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-Tierra h3 img {
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-Tierra h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-Tierra img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.Pokemon-slot-Tierra .tipo1 {
+    background-color: rgba(231, 114, 53);
+    margin-right: 16px;
+    margin-left: 5px;
+
+}
 
 
 
@@ -765,6 +874,26 @@ margin-top: 20px;
     transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 }
+
+.Pokemon-slot-electrico:hover{
+        background-color: rgba(255, 251, 0, 0.685);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.Pokemon-slot-Tierra:hover{
+            background-color: rgb(111, 109, 2);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+
+
+
+
+
 
 .cintillo img:hover {
     cursor: pointer;
