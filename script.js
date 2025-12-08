@@ -19,7 +19,7 @@ function cambiarDato(urlImagen, descripcionTexto, ps, atk, def, spa, spd, spe) {
         const el = BARS[i];
         if (!el || value == null) return;
 
-        // aceptar número o "NNNpx" para compatibilidad
+      
         let stat = typeof value === 'string' && value.endsWith('px')
             ? Math.round(parseInt(value, 10) / SCALE)
             : Number(value);
