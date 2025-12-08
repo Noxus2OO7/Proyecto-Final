@@ -10,17 +10,18 @@ header {
     height: 50px;
     justify-content: center;
     padding: 10px;
+    position: fixed;
 }
 
-header img{
+header img {
     height: 50px;
 }
 
-.Pokedex-info{
-background-color: rgba(255, 255, 255, 0);
-width: 50%;
-padding: 50px;
-display: flex;
+.Pokedex-info {
+    background-color: rgba(255, 255, 255, 0);
+    width: 50%;
+    padding: 50px;
+    display: flex;
 
 
 }
@@ -30,26 +31,26 @@ display: flex;
     background-color: rgb(255, 255, 255);
     font-size: 20px;
     max-width: 300px;
-background-image: url(./Imagenes/fondo-texto-d3.jpg);
-      background-repeat:no-repeat;
-      background-size: cover;
+    background-image: url(./Imagenes/fondo-texto-d3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     height: 400px;
     text-align: center;
 
 }
 
-.Pokedex-texto h1{
+.Pokedex-texto h1 {
     margin-top: 120px;
     font-size: 20px;
 }
 
-.Pokedex-texto h3{
+.Pokedex-texto h3 {
     font-size: 16px;
 }
 
-.pokedex-cat h3{
-    margin:5px;
+.pokedex-cat h3 {
+    margin: 5px;
 
 }
 
@@ -62,24 +63,28 @@ background-image: url(./Imagenes/fondo-texto-d3.jpg);
     margin-left: 50px;
 }
 
-.pokedex-foto{
-    height: 460px;
-    background-color: #ffffff00;
+
+
+.pokedex-foto img {
+    height: 400px;
+    background-color: #00000000;
     width: auto;
-    margin-left: 100px;
+    margin-left: 250px;
+    margin-top: 70px;
 }
 
 .Pokemon-select {
     background-image: url(./Imagenes/intento-fondo-3.jpg);
-      background-repeat:no-repeat;
-      background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     width: 100%;
     display: flex;
     background-color: rgb(239, 255, 239);
     height: 500px;
     border-radius: 0 0 15% 15%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+
 }
 
 body {
@@ -90,9 +95,29 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-     overflow-y: auto;
+    overflow-y: auto;
+
 }
 
+.cintillo img {
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.cintillo {
+    width: 100%;
+    background-color: #ffffff00;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+    margin-bottom: 50px;
+    overflow: visible;
+    position: relative;
+}
 
 main {
     background-color: rgba(255, 18, 18, 0);
@@ -102,6 +127,7 @@ main {
     width: 900px;
     max-width: 900px;
     min-height: 100vh;
+
 }
 
 
@@ -122,22 +148,22 @@ main {
     height: 380px;
     border: solid 1px #ffffff;
     background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(6, 120, 0)), url(./Imagenes/pokeball-blanca.png);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     transition: all 0.3s;
 }
 
 .Pokemon-tipos {
     display: flex;
     text-align: center;
-    
-    
+
+
 }
 
 .Pokemon-datos {
     display: flex;
     text-align: center;
-    
-    
+
+
 }
 
 .Datos-P {
@@ -149,51 +175,51 @@ main {
 
 
 
-.tipo1{
+.tipo1 {
     background-color: rgb(0, 255, 13);
     margin-right: 15px;
     margin-left: 5px;
 }
 
-.tipo2{
+.tipo2 {
     background-color: blueviolet;
 }
 
-.Pokemon-slot div{
+.Pokemon-slot div {
     padding: 5px;
 }
 
-.Pokemon-slot h3{
+.Pokemon-slot h3 {
     border-radius: 20px;
     padding: 3px;
     width: 100px;
     display: flex;
 }
 
-.Pokemon-slot h3 img{
+.Pokemon-slot h3 img {
     height: 25px;
     margin-top: 0;
 }
 
 
-.Pokemon-slot h2{
+.Pokemon-slot h2 {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
 
 
-.Datos-todo{
-margin-left: 20px;
-text-align: center;
+.Datos-todo {
+    margin-left: 20px;
+    text-align: center;
 
 }
 
-.tipo1 img{
+.tipo1 img {
     border-radius: 50%;
 }
 
-.foto{
+.foto {
     height: 900px;
 }
 
@@ -207,8 +233,8 @@ text-align: center;
     color: white;
     height: 380px;
     border: solid 1px #ffffff;
-     background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(255, 30, 0, 0.864)), url(./Imagenes/pokeball-blanca.png);
-    background-repeat:no-repeat;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(255, 30, 0, 0.864)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
     width: 255px;
     transition: all 0.3s;
 
@@ -220,47 +246,47 @@ text-align: center;
 }
 
 
-.Pokemon-slot-fuego div{
+.Pokemon-slot-fuego div {
     padding: 5px;
 }
 
-.Pokemon-slot-fuego h3{
+.Pokemon-slot-fuego h3 {
     border-radius: 20px;
     padding: 3px;
     width: 100px;
     display: flex;
 }
 
-.Pokemon-slot-fuego h3 img{
+.Pokemon-slot-fuego h3 img {
     height: 25px;
     margin-top: 0;
 }
 
 
-.Pokemon-slot-fuego h2{
+.Pokemon-slot-fuego h2 {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
 .Pokemon-slot-fuego img {
     height: 200px;
-margin-top: 20px;
+    margin-top: 20px;
 }
 
-.Pokemon-slot-fuego .tipo1{
+.Pokemon-slot-fuego .tipo1 {
     background-color: rgba(255, 1, 1, 0.622);
     margin-right: 15px;
     margin-left: 5px;
-   
+
 }
 
-.Pokemon-slot-fuego .tipo2{
+.Pokemon-slot-fuego .tipo2 {
     background-color: rgb(67, 155, 255);
     margin-right: 15px;
     margin-left: 5px;
 }
 
-.charizard{
+.charizard {
     height: 200px;
     width: 300px;
     margin-left: 40px;
@@ -278,59 +304,59 @@ margin-top: 20px;
     color: white;
     height: 380px;
     border: solid 1px #ffffff;
-     background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 123, 255, 0.864)), url(./Imagenes/pokeball-blanca.png);
-    background-repeat:no-repeat;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 123, 255, 0.864)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
     width: 255px;
-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 
-.Pokemon-slot-agua div{
+.Pokemon-slot-agua div {
     padding: 5px;
 }
 
-.Pokemon-slot-agua h3{
+.Pokemon-slot-agua h3 {
     border-radius: 20px;
     padding: 3px;
     width: 100px;
     display: flex;
 }
 
-.Pokemon-slot-agua h3 img{
+.Pokemon-slot-agua h3 img {
     height: 25px;
     margin-top: 0;
 }
 
 
-.Pokemon-slot-agua h2{
+.Pokemon-slot-agua h2 {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
 
 
-.Pokemon-slot-agua .tipo1{
+.Pokemon-slot-agua .tipo1 {
     background-color: rgba(97, 115, 255, 0.622);
     margin-right: 15px;
     margin-left: 5px;
-   
+
 }
 
-.Pokemon-slot-agua .tipo2{
+.Pokemon-slot-agua .tipo2 {
     background-color: rgb(67, 155, 255);
     margin-right: 15px;
     margin-left: 5px;
 }
 
-.Squirtle{
- width: 150px;
- margin: auto;
-margin-bottom: 15px;
+.Squirtle {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 15px;
 }
 
 
-.Pokemon-slot-agua h2{
- margin-top: -20px;
+.Pokemon-slot-agua h2 {
+    margin-top: -20px;
 }
 
 .Pokemon-slot-bicho {
@@ -342,8 +368,8 @@ margin-bottom: 15px;
     color: white;
     height: 380px;
     border: solid 1px #ffffff;
-     background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(73, 136, 0)), url(./Imagenes/pokeball-blanca.png);
- background-repeat:no-repeat;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(73, 136, 0)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
     width: 255px;
     transition: all 0.3s;
 
@@ -355,41 +381,41 @@ margin-bottom: 15px;
 }
 
 
-.Pokemon-slot-bicho div{
+.Pokemon-slot-bicho div {
     padding: 5px;
 }
 
-.Pokemon-slot-bicho h3{
+.Pokemon-slot-bicho h3 {
     border-radius: 20px;
     padding: 3px;
     width: 100px;
     display: flex;
 }
 
-.Pokemon-slot-bicho h3 img{
+.Pokemon-slot-bicho h3 img {
     height: 25px;
     margin-top: 0;
 }
 
 
-.Pokemon-slot-bicho h2{
+.Pokemon-slot-bicho h2 {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
 .Pokemon-slot-bicho img {
     height: 200px;
-margin-top: 20px;
+    margin-top: 20px;
 }
 
-.Pokemon-slot-bicho .tipo1{
+.Pokemon-slot-bicho .tipo1 {
     background-color: rgba(121, 164, 73);
     margin-right: 15px;
     margin-left: 5px;
-   
+
 }
 
-.Pokemon-slot-bicho .tipo2{
+.Pokemon-slot-bicho .tipo2 {
     background-color: rgb(255, 0, 187);
     margin-right: 15px;
     margin-left: 5px;
@@ -397,7 +423,7 @@ margin-top: 20px;
 
 
 
-.Psiquico{
+.Psiquico {
     border-radius: 50%;
 }
 
@@ -407,22 +433,22 @@ margin-top: 20px;
 
 
 
-.barra-fuera{
-background-color: #e6e6e6;
-width: 100%;
-padding: 2px;
-border-radius: 10px;
+.barra-fuera {
+    background-color: #e6e6e6;
+    width: 100%;
+    padding: 2px;
+    border-radius: 10px;
 }
 
-.barra-dentro p{
-background-color: rgb(211, 255, 66);
-width: 200px;
-border-radius: 10px;
-padding: 2px;
+.barra-dentro p {
+    background-color: rgb(211, 255, 66);
+    width: 200px;
+    border-radius: 10px;
+    padding: 2px;
 
 }
 
-.barra-dentro{
+.barra-dentro {
 
     width: 300px;
 }
@@ -436,8 +462,8 @@ padding: 2px;
     color: white;
     height: 380px;
     border: solid 1px #ffffff;
-     background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(232, 226, 57, 0.881)), url(./Imagenes/pokeball-blanca.png);
- background-repeat:no-repeat;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(232, 226, 57, 0.881)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
     width: 255px;
     transition: all 0.3s;
 
@@ -449,41 +475,41 @@ padding: 2px;
 }
 
 
-.Pokemon-slot-weedle div{
+.Pokemon-slot-weedle div {
     padding: 5px;
 }
 
-.Pokemon-slot-weedle h3{
+.Pokemon-slot-weedle h3 {
     border-radius: 20px;
     padding: 3px;
     width: 100px;
     display: flex;
 }
 
-.Pokemon-slot-weedle h3 img{
+.Pokemon-slot-weedle h3 img {
     height: 25px;
     margin-top: 0;
 }
 
 
-.Pokemon-slot-weedle h2{
+.Pokemon-slot-weedle h2 {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
 .Pokemon-slot-weedle img {
     height: 200px;
-margin-top: 20px;
+    margin-top: 20px;
 }
 
-.Pokemon-slot-weedle .tipo1{
+.Pokemon-slot-weedle .tipo1 {
     background-color: rgba(121, 164, 73);
     margin-right: 15px;
     margin-left: 5px;
-   
+
 }
 
-.Pokemon-slot-weedle .tipo2{
+.Pokemon-slot-weedle .tipo2 {
     background-color: blueviolet;
     margin-right: 15px;
     margin-left: 5px;
@@ -499,6 +525,8 @@ margin-top: 20px;
     color: white;
     height: 380px;
     border: solid 1px #ffffff;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(180, 182, 178)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
      background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(161, 163, 160)), url(./Imagenes/pokeball-blanca.png);
  background-repeat:no-repeat;
     width: 255px;
@@ -512,40 +540,43 @@ margin-top: 20px;
 }
 
 
-.Pokemon-slot-normal div{
+.Pokemon-slot-normal div {
     padding: 5px;
 }
 
-.Pokemon-slot-normal h3{
+.Pokemon-slot-normal h3 {
     border-radius: 20px;
     padding: 3px;
     width: 100px;
     display: flex;
 }
 
-.Pokemon-slot-normal h3 img{
+.Pokemon-slot-normal h3 img {
     height: 25px;
     margin-top: 0;
 }
 
 
-.Pokemon-slot-normal h2{
+.Pokemon-slot-normal h2 {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
 .Pokemon-slot-normal img {
     height: 200px;
-margin-top: 20px;
+    margin-top: 20px;
 }
 
+.Pokemon-slot-normal .tipo1 {
+    background-color: rgba(180, 182, 178);
 .Pokemon-slot-normal .tipo1{
     background-color: rgba(161, 163, 160);
     margin-right: 15px;
     margin-left: 5px;
-   
+
 }
 
+.Pokemon-slot-normal .tipo2 {
 .Pokemon-slot-normal .tipo2{
     background-color: rgb(67, 155, 255);
     margin-right: 15px;
@@ -617,6 +648,43 @@ margin-top: 20px;
 
 
 
+.anterior {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-image:
+        radial-gradient(white 20%, white 20%, black 20%, black 30%, transparent 30%, transparent),
+        linear-gradient(red 46%, black 46%, black 54%, white 54%);
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.3s;
+    left: 20px;
+    top: 50%;
+    margin: 30px;
+}
+
+
+.siguiente {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background-image:
+        radial-gradient(white 20%, white 20%, black 20%, black 30%, transparent 30%, transparent),
+        linear-gradient(red 46%, black 46%, black 54%, white 54%);
+    cursor: pointer;
+    z-index: 100;
+    transition: all 0.3s;
+    transform: translateY(-50%);
+    left: 93%;
+    top: 50%;
+    margin: 30px;
+}
+
+
 
 
 
@@ -659,46 +727,81 @@ margin-top: 20px;
 
 
 /* Chambea kevin */
-.Pokemon-slot:hover{
-background-color: rgb(162, 255, 0);
-cursor: pointer;
-transform: translate3d(0px,0px,0px) scale3d(0.9,0.9,1)
-rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
-transform-style: preserve-3d;
+.Pokemon-slot:hover {
+    background-color: rgb(162, 255, 0);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
 }
 
-.Pokemon-slot-fuego:hover{
+.Pokemon-slot-fuego:hover {
     background-color: rgb(255, 77, 0);
-cursor: pointer;
-transform: translate3d(0px,0px,0px) scale3d(0.9,0.9,1)
-rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
-transform-style: preserve-3d;
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
 }
 
-.Pokemon-slot-agua:hover{
+.Pokemon-slot-agua:hover {
     background-color: rgb(16, 113, 115);
-cursor: pointer;
-transform: translate3d(0px,0px,0px) scale3d(0.9,0.9,1)
-rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
-transform-style: preserve-3d;
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
 }
 
-.Pokemon-slot-bicho:hover{
+.Pokemon-slot-bicho:hover {
     background-color: rgb(143, 49, 113);
-cursor: pointer;
-transform: translate3d(0px,0px,0px) scale3d(0.9,0.9,1)
-rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
-transform-style: preserve-3d;
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
 }
 
-.Pokemon-slot-weedle:hover{
+.Pokemon-slot-weedle:hover {
     background-color: rgb(79, 4, 55);
-cursor: pointer;
-transform: translate3d(0px,0px,0px) scale3d(0.9,0.9,1)
-rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
-transform-style: preserve-3d;
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
 }
 
+.Pokemon-slot-normal:hover {
+    background-color: rgba(171, 172, 173, 0.685);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.cintillo img:hover {
+    cursor: pointer;
+    filter: brightness(1.5) drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+
+
+.tipo-item {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tipo-item img {
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.tipo-item:hover img {
+    filter: brightness(1.5) drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0px);
+    }
 .Pokemon-slot-normal:hover{
     background-color: rgb(145, 147, 144);
 cursor: pointer;
@@ -713,4 +816,31 @@ cursor: pointer;
 transform: translate3d(0px,0px,0px) scale3d(0.9,0.9,1)
 rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
 transform-style: preserve-3d;
+}
+
+.tipo-item:hover::after {
+    content: attr(data-tipo);
+    position: absolute;
+    bottom: -25px;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 12px;
+    white-space: nowrap;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    left: 37%;
+    border-radius: 5px;
+    z-index: 10;
+    animation: slideUp 0.3s ease-out;
+}
+
+.siguiente:hover {
+    transform: translateY(-50%) rotate(90deg) scale(1.2);
+     filter: brightness(1.5) drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+.anterior:hover {
+    transform:  rotate(-90deg) scale(1.2);
+     filter: brightness(1.5) drop-shadow(0 0 10px rgb(255, 255, 255));
 }
