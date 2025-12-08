@@ -567,8 +567,6 @@ main {
     margin-top: 20px;
 }
 
-.Pokemon-slot-normal .tipo1 {
-    background-color: rgba(180, 182, 178);
 .Pokemon-slot-normal .tipo1{
     background-color: rgba(161, 163, 160);
     margin-right: 15px;
@@ -576,7 +574,6 @@ main {
 
 }
 
-.Pokemon-slot-normal .tipo2 {
 .Pokemon-slot-normal .tipo2{
     background-color: rgb(67, 155, 255);
     margin-right: 15px;
@@ -792,6 +789,7 @@ margin-top: 20px;
     filter: brightness(1.5) drop-shadow(0 0 10px rgb(255, 255, 255));
 }
 
+
 @keyframes slideUp {
     from {
         opacity: 0;
@@ -801,7 +799,8 @@ margin-top: 20px;
     to {
         opacity: 1;
         transform: translateX(-50%) translateY(0px);
-    }
+    }}
+    
 .Pokemon-slot-normal:hover{
     background-color: rgb(145, 147, 144);
 cursor: pointer;
