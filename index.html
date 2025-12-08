@@ -12,76 +12,62 @@
 
 <body>
 
-
   <header>
     <img src="./Imagenes/pngegg.png" alt="">
   </header>
-
-
 
   <div class="Pokemon-select" id="pokemon-select">
 
     <div class="Pokedex-info" id="pokemon-info">
       
       <div class="Pokedex-texto" id="pokemon-texto">
-
         <h1>Descripción en la Pokedex</h1>
-        
-              <h3 id="descripcion-pokemon">Bulbasaur es un Pokémon inicial de tipo Planta/Veneno, conocido por el bulbo que tiene en su lomo, plantado al
+        <h3 id="descripcion-pokemon">Bulbasaur es un Pokémon inicial de tipo Planta/Veneno, conocido por el bulbo que tiene en su lomo, plantado al
                 nacer, que crece absorbiendo energía solar y le permite pasar días sin comer, además de usarlo para ataques como
                 Drenadoras o Rayo Solar. Se asemeja a un anfibio con piel turquesa y manchas verdes, grandes ojos rojos y tres
                 garras en cada pata, siendo atraído por fuentes de agua y jardines, y evolucionando a Ivysaur y luego a
                 Venusaur. </h3>
       </div>
 
-
       <div class="pokedex-cat" id="pokemon-cat">
-
-
         <h3>PS:</h3>
-
         <div class="barra-fuera">
-          <div class="barra-dentro" id="barra-dentro">
+          <div class="barra-dentro">
             <p id="PS">100</p>
           </div>
         </div>
 
         <h3>Ataque: </h3>
-
          <div class="barra-fuera">
-          <div class="barra-dentro" id="barra-dentro">
+          <div class="barra-dentro">
             <p id="ataque">100</p>
           </div>
         </div>
 
         <h3>Defensa: </h3>
-
          <div class="barra-fuera">
-          <div class="barra-dentro" id="barra-dentro">
+          <div class="barra-dentro">
             <p id="defensa">100</p>
           </div>
         </div>
 
         <h3>Ataque.S: </h3>
-
          <div class="barra-fuera">
-          <div class="barra-dentro" id="barra-dentro">
+          <div class="barra-dentro">
             <p id="ataque.s">100</p>
           </div>
         </div>
         
         <h3>Defensa.S: </h3>
-
          <div class="barra-fuera">
-          <div class="barra-dentro" id="barra-dentro">
+          <div class="barra-dentro">
             <p id="defensa.s">100</p>
           </div>
         </div>
 
         <h3>Velocidad: </h3>
-
          <div class="barra-fuera">
-          <div class="barra-dentro" id="barra-dentro">
+          <div class="barra-dentro">
             <p id="Velocidad">100</p>
           </div>
         </div>
@@ -89,19 +75,34 @@
       </div>
     </div>
 
-    <div class="pokedex-foto" >
+    <div class="pokedex-foto">
       <img src="./Imagenes/pokeball-blanca.png" alt="" id="foto-pokemon">
     </div>
 
-
   </div>
-
 
   <main>
 
-    <!-- inicio de la Linea evolutiva de bulbasaur -->
+    <div class="cintillo">
+      <span class="tipo-item" data-tipo="Agua"><img src="./Imagenes/Tipo-agua.png" alt="Agua"></span>
+      <span class="tipo-item" data-tipo="Fuego"><img src="./Imagenes/fuego_icon.png" alt="Fuego"></span>
+      <span class="tipo-item" data-tipo="Veneno"><img src="./Imagenes/Veneno_icono.png" alt="Veneno"></span>
+      <span class="tipo-item" data-tipo="Psiquico"><img src="./Imagenes/psiquico_icon.png" alt="Psiquico"></span>
+      <span class="tipo-item" data-tipo="Bicho"><img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="Bicho"></span>
+      <span class="tipo-item" data-tipo="Volador"><img src="./Imagenes/tipo_volador.png" alt="Volador"></span>
+      <span class="tipo-item" data-tipo="Normal"><img src="./Imagenes/Tipo-normal.png" alt="Normal"></span>
+      <span class="tipo-item" data-tipo="Eléctrico"><img src="./Imagenes/Electrico_icono.jpg" alt="Eléctrico"></span>
+      <span class="tipo-item" data-tipo="Tierra"><img src="./Imagenes/icono_tierra.jpg" alt="Tierra"></span>
+      <span class="tipo-item" data-tipo="Roca"><img src="./Imagenes/icono_roca.jpg" alt="Roca"></span>
+      <span class="tipo-item" data-tipo="Planta"><img src="./Imagenes/Planta_icono.jpg" alt="Planta"></span>
+      <span class="tipo-item" data-tipo="Fantasma"><img src="./Imagenes/fantasma-icono.png" alt="Fantasma"></span>
+      <span class="tipo-item" data-tipo="Lucha"><img src="./Imagenes/lucha-icono.png" alt="Lucha"></span>
+      <span class="tipo-item" data-tipo="Hielo"><img src="./Imagenes/hielo-icono.png" alt="Hielo"></span>
+      <span class="tipo-item" data-tipo="Dragón"><img src="./Imagenes/dragon-icono.png" alt="Dragón"></span>
+    </div>
 
-    <div class="Pokemon-slot"onclick="cambiarDato('./Imagenes/bulbasaur4.png')">
+    <!-- Linea evolutiva Bulbasaur -->
+    <div class="Pokemon-slot" onclick="cambiarDato('./Imagenes/bulbasaur4.png','Bulbasaur','90px','98px','98px','130px','130px','90px')">
       <img src="./Imagenes/bulbasaur4.png" alt="">
       <h2>•Bulbasaur•</h2>
       <div class="Pokemon-tipos">
@@ -120,7 +121,7 @@
       </div>
     </div>
 
-    <div class="Pokemon-slot" onclick="cambiarDato('./Imagenes/ivysaur-real.png', 'ivysaur', '120px','20px', '90px', '200px','100px','70px')">
+    <div class="Pokemon-slot" onclick="cambiarDato('./Imagenes/ivysaur-real.png','Ivysaur','120px','124px','126px','160px','160px','120px')">
       <img src="./Imagenes/ivysaur-real.png" alt="" class="ivysaur">
       <h2>•Ivysaur•</h2>
       <div class="Pokemon-tipos">
@@ -139,7 +140,7 @@
       </div>
     </div>
 
-    <div class="Pokemon-slot" onclick="cambiarDato('./Imagenes/venasaur-real.png', 'pikachu', '180px','80px', '70px', '120px','300px','200px')">
+    <div class="Pokemon-slot" onclick="cambiarDato('./Imagenes/venasaur-real.png','Venusaur','160px','164px','166px','200px','200px','160px')">
       <img src="./Imagenes/venasaur-real.png" alt="">
       <h2>•Venasaur•</h2>
       <div class="Pokemon-tipos">
@@ -158,14 +159,12 @@
       </div>
     </div>
 
-    <!-- final de la linea evolutiva de Bulbasaur e Inicio de la de Charmander-->
-
-    <div class="Pokemon-slot-fuego">
+    <!-- Linea evolutiva Charmander -->
+    <div class="Pokemon-slot-fuego" onclick="cambiarDato('./Imagenes/charmander.png','Charmander','78px','104px','86px','120px','100px','130px')">
       <img src="./Imagenes/charmander.png" alt="">
       <h2>•Charmander•</h2>
       <div class="Pokemon-tipos">
         <h3 class="tipo1"> <img src="./Imagenes/fuego_icon.png" alt="">Fuego</h3>
-
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -179,12 +178,11 @@
       </div>
     </div>
 
-    <div class="Pokemon-slot-fuego">
+    <div class="Pokemon-slot-fuego" onclick="cambiarDato('./Imagenes/charmeleon_duro.png','Charmeleon','116px','128px','116px','160px','130px','160px')">
       <img src="./Imagenes/charmeleon_duro.png" alt="">
       <h2>•Charmeleon•</h2>
       <div class="Pokemon-tipos">
         <h3 class="tipo1"> <img src="./Imagenes/fuego_icon.png" alt="">Fuego</h3>
-
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -198,7 +196,7 @@
       </div>
     </div>
 
-    <div class="Pokemon-slot-fuego">
+    <div class="Pokemon-slot-fuego" onclick="cambiarDato('./Imagenes/charizard.png','Charizard','156px','168px','156px','218px','170px','200px')">
       <img src="./Imagenes/charizard.png" alt="" class="charizard">
       <h2>•Charizard•</h2>
       <div class="Pokemon-tipos">
@@ -217,14 +215,12 @@
       </div>
     </div>
 
-    <!-- Final de la linea evolutiva de Charizard e inicio de la de Blastoise -->
-
-    <div class="Pokemon-slot-agua">
+    <!-- Linea evolutiva Squirtle -->
+    <div class="Pokemon-slot-agua" onclick="cambiarDato('./Imagenes/Squirtle-removebg-preview.png','Squirtle','88px','96px','130px','100px','128px','86px')">
       <img src="./Imagenes/Squirtle-removebg-preview.png" alt="" class="Squirtle">
       <h2>•Squirtle•</h2>
       <div class="Pokemon-tipos">
         <h3 class="tipo1"> <img src="./Imagenes/Tipo-agua.png" alt="">Agua</h3>
-
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -238,12 +234,11 @@
       </div>
     </div>
 
-    <div class="Pokemon-slot-agua">
-      <img src="./Imagenes/wartortle.png" alt="" class="" class="wartortle">
+    <div class="Pokemon-slot-agua" onclick="cambiarDato('./Imagenes/wartortle.png','Wartortle','118px','126px','160px','130px','160px','116px')">
+      <img src="./Imagenes/wartortle.png" alt="" class="wartortle">
       <h2>•Wartortle•</h2>
       <div class="Pokemon-tipos">
         <h3 class="tipo1"> <img src="./Imagenes/Tipo-agua.png" alt="">Agua</h3>
-
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -256,16 +251,12 @@
         </div>
       </div>
     </div>
-    <div class="Pokemon-slot-agua">
+
+    <div class="Pokemon-slot-agua" onclick="cambiarDato('./Imagenes/blastoise.png','Blastoise','158px','166px','200px','170px','210px','156px')">
       <img src="./Imagenes/blastoise.png" alt="" class="blastoise">
-
-
       <h2>•Blastoise•</h2>
-
-
       <div class="Pokemon-tipos">
         <h3 class="tipo1"> <img src="./Imagenes/Tipo-agua.png" alt="">Agua</h3>
-
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -279,9 +270,8 @@
       </div>
     </div>
 
-    <!-- Final de la liena evolutiva de blastoise e inicio de la de butterfree -->
-
-    <div class="Pokemon-slot-bicho">
+    <!-- Linea evolutiva Bicho -->
+    <div class="Pokemon-slot-bicho" onclick="cambiarDato('./Imagenes/caterpie2.png','Caterpie','90px','60px','70px','40px','40px','90px')">
       <img src="./Imagenes/caterpie2.png" alt="" class="caterpie">
       <h2>•Caterpie•</h2>
       <div class="Pokemon-tipos">
@@ -299,12 +289,11 @@
       </div>
     </div>
 
-    <div class="Pokemon-slot-bicho">
+    <div class="Pokemon-slot-bicho" onclick="cambiarDato('./Imagenes/metapod2.png','Metapod','100px','40px','110px','50px','50px','60px')">
       <img src="./Imagenes/metapod2.png" alt="">
       <h2>•Metapod•</h2>
       <div class="Pokemon-tipos">
         <h3 class="tipo1"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
-
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -318,7 +307,7 @@
       </div>
     </div>
 
-    <div class="Pokemon-slot-bicho">
+    <div class="Pokemon-slot-bicho" onclick="cambiarDato('./Imagenes/Buteefree.png','Butterfree','120px','90px','100px','180px','160px','140px')">
       <img src="./Imagenes/Buteefree.png" alt="">
       <h2>•Butterfree•</h2>
       <div class="Pokemon-tipos">
@@ -337,9 +326,8 @@
       </div>
     </div>
 
-    <!-- final de la linea evolutiva de butterfree e inicio de la de beedrill -->
-
-<div class="Pokemon-slot-weedle">
+    <!-- Extra slot (copia) -->
+    <div class="Pokemon-slot-weedle">
       <img src="./Imagenes/caterpie2.png" alt="" class="caterpie">
       <h2>•Caterpie•</h2>
       <div class="Pokemon-tipos">
@@ -357,21 +345,10 @@
       </div>
     </div>
 
-
-
-
-
-
-
   </main>
 
-
+  <a href="" class="anterior"></a>
+  <a href="./index2.html" class="siguiente"></a>
 
 </body>
-
-
-
-
-
-
 </html>
