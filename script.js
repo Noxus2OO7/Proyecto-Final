@@ -10,45 +10,64 @@ const barra_velocidad = document.getElementById("Velocidad");
 const SCALE = 2; // 1 punto de stat = 2px
 const BARS = [barra_PS, barra_ataque, barra_defensa, barra_ataque_s, barra_defensa_s, barra_velocidad];
 
-// Agregar transición suave a todos los elementos de barras
+// // // // Agregar transición suave a todos los elementos de barras
 BARS.forEach(bar => {
     if (bar) bar.style.transition = 'width 1.7s ease, color 0.3s ease';
 });
-
-// Agregar transición a foto y descripción
+// Maldito sea JS
+// // // // Agregar transición a foto y descripción
 if (pokemon_foto) pokemon_foto.style.transition = 'opacity 0.3s ease';
 if (descripcion) descripcion.style.transition = 'opacity 0.3s ease';
 
 function cambiarDato(urlImagen, descripcionTexto, ps, atk, def, spa, spd, spe) {
-    // Fade out effect
     pokemon_foto.style.opacity = '0';
     descripcion.style.opacity = '0';
     
     setTimeout(() => {
         if (urlImagen) pokemon_foto.src = urlImagen;
         if (descripcionTexto !== undefined) descripcion.textContent = descripcionTexto;
-        
-        // Fade in effect
+
         pokemon_foto.style.opacity = '1';
         descripcion.style.opacity = '1';
     }, 150);
-    
+
     const stats = [ps, atk, def, spa, spd, spe];
+    const bars = [barra_PS, barra_ataque, barra_defensa, barra_ataque_s, barra_defensa_s, barra_velocidad];
+
     stats.forEach((value, i) => {
-        const el = BARS[i];
-        if (!el || value == null) return;
-        
-        
+        const bar = bars[i];
+        if (!bar || value == null) return;
+
         let stat = typeof value === 'string' && value.endsWith('px')
-        ? Math.round(parseInt(value, 10) / SCALE)
-        : Number(value);
-        
+            ? Math.round(parseInt(value, 10) / SCALE)
+            : Number(value);
+
         if (isNaN(stat)) return;
-        
-        el.style.width = (stat * SCALE) + 'px';
-        el.textContent = String(stat);
+
+        // Aplicar ancho
+        bar.style.width = (stat * SCALE) + 'px';
+        bar.textContent = String(stat);
+
+        // ---------- COLOR SEGÚN VALOR ----------
+    if (stat < 35) {
+    bar.style.backgroundColor = "rgba(255, 35, 35, 1)";
+} 
+else if (stat < 60) {
+    bar.style.backgroundColor = "rgba(255, 177, 31, 1)";
+} 
+else if (stat < 78) {
+    bar.style.backgroundColor = "rgba(255, 227, 44, 1)";
+} 
+else if (stat < 95) {
+    bar.style.backgroundColor = "rgba(50, 255, 53, 1)";
+} 
+else {
+    bar.style.backgroundColor = "rgba(90, 172, 255, 1)";
+}
+
     });
 }
+
 
 
 document.querySelectorAll('[onclick*="cambiarDato("]').forEach(el => {
@@ -82,15 +101,6 @@ document.querySelectorAll('[onclick*="cambiarDato("]').forEach(el => {
     });
 });
 
-if (barra_PS.offsetWidth < 70) {
-    barra_PS.style.backgroundColor = "red";
-
-} else if (barra_PS.offsetWidth < 130) {
-    barra_PS.style.backgroundColor = "orange";
-
-} else {
-    barra_PS.style.backgroundColor = "green";
-}
 
 
     

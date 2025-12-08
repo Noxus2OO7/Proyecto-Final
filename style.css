@@ -29,6 +29,8 @@ header {
     justify-content: center;
     padding: 10px;
     position: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.422), rgba(0, 0, 0, 0));
+    z-index: 100;
 }
 
 header img {
@@ -734,7 +736,7 @@ margin-top: 20px;
     border: solid 1px #ffffff;
    
     background-repeat: no-repeat;
-     background: linear-gradient(rgba(255, 119, 212, 0.903), rgba(161, 163, 160)), url(./Imagenes/pokeball-blanca.png);
+     background: linear-gradient(rgba(255, 119, 212, 0.402), rgb(240, 172, 255)), url(./Imagenes/pokeball-blanca.png);
  background-repeat:no-repeat;
     width: 255px;
     transition: all 0.3s;
@@ -775,17 +777,32 @@ margin-top: 20px;
 }
 
 .Pokemon-slot-clefairy .tipo1{
+    background-color: rgb(223, 79, 255);
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.Pokemon-slot-clefairy .tipo2{
     background-color: rgba(161, 163, 160);
     margin-right: 15px;
     margin-left: 5px;
+}
 
+.Pokemon-slot-clefairy .tipo2 img{
+    border-radius: 50%;
+}
+
+.wigglytuff{
+transform: scale(0.8);
+ transform-origin: center;
+ width: 180px;
+ height: 150px;
+ margin: auto;
 }
 
 .clefairy{
- transform: scale(0.8);
- transform-origin: center;
- width: 199px;
- margin: auto;
+ transform: scale(0.6);
+ 
 }
 
 .anterior {
@@ -833,7 +850,7 @@ margin-top: 20px;
     color: white;
     height: 380px;
     border: solid 1px #ffffff;
-    background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(240, 233, 13, 0.881)), url(./Imagenes/pokeball-blanca.png);
+    background: linear-gradient(rgba(0, 0, 255, 0.265), rgba(240, 233, 13, 0.881)), url(./Imagenes/pokeball-blanca.png);
     background-repeat: no-repeat;
     width: 255px;
     transition: all 0.3s;
@@ -945,7 +962,7 @@ margin-top: 20px;
     color: white;
     height: 380px;
     border: solid 1px #ffffff;
-    background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(255, 85, 0, 0.864)), url(./Imagenes/pokeball-blanca.png);
+    background: linear-gradient(rgba(0, 0, 255, 0.181), rgba(255, 85, 0, 0.864)), url(./Imagenes/pokeball-blanca.png);
     background-repeat: no-repeat;
     width: 255px;
     transition: all 0.3s;
@@ -1057,12 +1074,15 @@ margin-top: 20px;
     margin-left: 5px;
 }
 
-.zubat{
-    transform: scale(0.8);
- transform-origin: center;
- width: 199px;
+.Zubat{
+    
+transform: scale(0.6);
  margin: auto;
 }
+
+
+
+
 
 
 
