@@ -1,4 +1,3 @@
-
 const pokemon_foto = document.getElementById("foto-pokemon");
 const descripcion = document.getElementById("descripcion-pokemon");
 const barra_PS = document.getElementById("PS");
@@ -8,32 +7,26 @@ const barra_ataque_s = document.getElementById("ataque.s");
 const barra_defensa_s = document.getElementById("defensa.s");
 const barra_velocidad = document.getElementById("Velocidad");
 
-function cambiarDato(urlImagen, descripcionTexto, psValue, ataqueValue, defensaValue, ataqueSValue, defensaSValue, velocidadValue) {
-    pokemon_foto.src = urlImagen;
+const SCALE = 2; // 1 punto de stat = 2px
+const BARS = [barra_PS, barra_ataque, barra_defensa, barra_ataque_s, barra_defensa_s, barra_velocidad];
+
+function cambiarDato(urlImagen, descripcionTexto, ps, atk, def, spa, spd, spe) {
+    if (urlImagen) pokemon_foto.src = urlImagen;
     if (descripcionTexto !== undefined) descripcion.textContent = descripcionTexto;
 
-    if (psValue !== undefined) {
-      barra_PS.style.width = psValue;
-      barra_PS.textContent = psValue.replace(/px$/,'');
-    }
-    if (ataqueValue !== undefined) {
-      barra_ataque.style.width = ataqueValue;
-      barra_ataque.textContent = ataqueValue.replace(/px$/,'');
-    }
-    if (defensaValue !== undefined) {
-      barra_defensa.style.width = defensaValue;
-      barra_defensa.textContent = defensaValue.replace(/px$/,'');
-    }
-    if (ataqueSValue !== undefined) {
-      barra_ataque_s.style.width = ataqueSValue;
-      barra_ataque_s.textContent = ataqueSValue.replace(/px$/,'');
-    }
-    if (defensaSValue !== undefined) {
-      barra_defensa_s.style.width = defensaSValue;
-      barra_defensa_s.textContent = defensaSValue.replace(/px$/,'');
-    }
-    if (velocidadValue !== undefined) {
-      barra_velocidad.style.width = velocidadValue;
-      barra_velocidad.textContent = velocidadValue.replace(/px$/,'');
-    }
+    const stats = [ps, atk, def, spa, spd, spe];
+    stats.forEach((value, i) => {
+        const el = BARS[i];
+        if (!el || value == null) return;
+
+        // aceptar número o "NNNpx" para compatibilidad
+        let stat = typeof value === 'string' && value.endsWith('px')
+            ? Math.round(parseInt(value, 10) / SCALE)
+            : Number(value);
+
+        if (isNaN(stat)) return;
+
+        el.style.width = (stat * SCALE) + 'px';
+        el.textContent = String(stat);
+    });
 }
