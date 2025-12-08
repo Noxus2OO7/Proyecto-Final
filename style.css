@@ -461,6 +461,7 @@ margin-top: 20px;
     margin-left: 5px;
 }
 
+
 .Pokemon-slot-normal {
     display: flex;
     padding: 10px;
@@ -470,7 +471,7 @@ margin-top: 20px;
     color: white;
     height: 380px;
     border: solid 1px #ffffff;
-     background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(180, 182, 178)), url(./Imagenes/pokeball-blanca.png);
+     background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(161, 163, 160)), url(./Imagenes/pokeball-blanca.png);
  background-repeat:no-repeat;
     width: 255px;
     transition: all 0.3s;
@@ -511,14 +512,77 @@ margin-top: 20px;
 }
 
 .Pokemon-slot-normal .tipo1{
-    background-color: rgba(180, 182, 178);
+    background-color: rgba(161, 163, 160);
     margin-right: 15px;
     margin-left: 5px;
    
 }
 
 .Pokemon-slot-normal .tipo2{
-background-color: rgb(67, 155, 255);
+    background-color: rgb(67, 155, 255);
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+
+.Pokemon-slot-veneno{
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+     background: linear-gradient(rgba(0, 0, 255, 0.3), blueviolet), url(./Imagenes/pokeball-blanca.png);
+    background-repeat:no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+
+.Pokemon-slot-veneno {
+    display: flex;
+
+}
+
+
+.Pokemon-slot-veneno div{
+    padding: 5px;
+}
+
+.Pokemon-slot-veneno h3{
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-veneno h3 img{
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-veneno h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-veneno img {
+    height: 200px;
+margin-top: 20px;
+}
+
+.Pokemon-slot-veneno .tipo1{
+    background-color: blueviolet;
+    margin-right: 15px;
+    margin-left: 5px;
+   
+}
+
+.Pokemon-slot-veneno .tipo2{
+    background-color: rgb(67, 155, 255);
     margin-right: 15px;
     margin-left: 5px;
 }
@@ -608,7 +672,15 @@ transform-style: preserve-3d;
 }
 
 .Pokemon-slot-normal:hover{
-    background-color: rgba(171, 172, 173, 0.685);
+    background-color: rgb(145, 147, 144);
+cursor: pointer;
+transform: translate3d(0px,0px,0px) scale3d(0.9,0.9,1)
+rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
+transform-style: preserve-3d;
+}
+
+.Pokemon-slot-veneno:hover{
+    background-color: rgb(190, 0, 227);
 cursor: pointer;
 transform: translate3d(0px,0px,0px) scale3d(0.9,0.9,1)
 rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
