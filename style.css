@@ -19,9 +19,7 @@ html {
     }
 }
 
-.barra-animada {
-    animation: barraExpand 0.8s ease-out forwards;
-}
+
 
 header {
     background-color: rgba(0, 0, 0, 0);
@@ -461,10 +459,11 @@ main {
 }
 
 .barra-dentro p {
-    background-color: rgb(211, 255, 66);
-    width: 200px;
+    background-color: rgb(255, 210, 63);
+    width: 20px;
     border-radius: 10px;
     padding: 2px;
+    
 
 }
 

@@ -12,7 +12,7 @@ const BARS = [barra_PS, barra_ataque, barra_defensa, barra_ataque_s, barra_defen
 
 // Agregar transición suave a todos los elementos de barras
 BARS.forEach(bar => {
-    if (bar) bar.style.transition = 'width 0.6s ease, color 0.3s ease';
+    if (bar) bar.style.transition = 'width 1.7s ease, color 0.3s ease';
 });
 
 // Agregar transición a foto y descripción
