@@ -94,6 +94,11 @@ header img {
     
 }
 
+.Pokemon-select img{
+    scale: calc(0.7);
+}
+
+
 .Pokemon-select {
     background-image: url(./Imagenes/intento-fondo-3.jpg);
     background-repeat: no-repeat;
@@ -105,7 +110,6 @@ header img {
     height: 500px;
     border-radius: 0 0 15% 15%;
     margin-bottom: 50px;
-
 }
 
 body {
