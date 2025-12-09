@@ -1082,9 +1082,129 @@ transform: scale(0.6);
 }
 
 
+.Pokemon-slot-paras {
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(232, 226, 57, 0.881)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+
+.Pokemon-slot-paras {
+    display: flex;
+
+}
 
 
+.Pokemon-slot-paras div {
+    padding: 5px;
+}
 
+.Pokemon-slot-paras h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-paras h3 img {
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-paras h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-paras img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.Pokemon-slot-paras .tipo1 {
+    background-color: rgba(121, 164, 73);
+    margin-right: 15px;
+    margin-left: 5px;
+
+}
+
+.Pokemon-slot-paras .tipo2 {
+    background-color: rgb(0, 255, 13);
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.Pokemon-slot-venonat{
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+     background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(91, 38, 117)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat:no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+
+.Pokemon-slot-venonat {
+    display: flex;
+
+}
+
+
+.Pokemon-slot-venonat div{
+    padding: 5px;
+}
+
+.Pokemon-slot-venonat h3{
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-venonat h3 img{
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-venonat h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-venonat img {
+    height: 200px;
+margin-top: 20px;
+}
+
+.Pokemon-slot-venonat .tipo1{
+    background-color: rgb(121, 164, 73);
+    margin-right: 15px;
+    margin-left: 5px;
+   
+}
+
+.Pokemon-slot-venonat .tipo2{
+    background-color: rgb(168, 76, 214);
+    margin-right: 15px;
+    margin-left: 5px;
+}
 
 
 
@@ -1187,7 +1307,21 @@ transform: scale(0.6);
     transform-style: preserve-3d;
 }
 
+.Pokemon-slot-paras:hover{
+        background-color: rgb(97, 153, 1);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
 
+.Pokemon-slot-venonat:hover{
+    background-color: rgb(83, 155, 0);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+/*trabajo de ricardo */
 
 .tipo-item:hover::after {
     content: attr(data-tipo);
