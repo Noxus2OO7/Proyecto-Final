@@ -530,7 +530,7 @@ main {
 }
 
 .Pokemon-slot-weedle .tipo2 {
-    background-color: blueviolet;
+    background-color: rgb(168, 76, 214);
     margin-right: 15px;
     margin-left: 5px;
 }
@@ -726,20 +726,70 @@ margin-top: 20px;
 
 
 
+.Pokemon-slot-clefairy{
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+   
+    background-repeat: no-repeat;
+     background: linear-gradient(rgba(255, 119, 212, 0.903), rgba(161, 163, 160)), url(./Imagenes/pokeball-blanca.png);
+ background-repeat:no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+
+.Pokemon-slot-clefairy {
+    display: flex;
+
+}
 
 
+.Pokemon-slot-clefairy div {
+    padding: 5px;
+}
+
+.Pokemon-slot-clefairy h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-clefairy h3 img {
+    height: 25px;
+    margin-top: 0;
+}
 
 
+.Pokemon-slot-clefairy h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 
+.Pokemon-slot-clefairy img {
+    height: 200px;
+    margin-top: 20px;
+}
 
+.Pokemon-slot-clefairy .tipo1{
+    background-color: rgba(161, 163, 160);
+    margin-right: 15px;
+    margin-left: 5px;
 
+}
 
-
-
-
-
-
-
+.clefairy{
+ transform: scale(0.8);
+ transform-origin: center;
+ width: 199px;
+ margin: auto;
+}
 
 .anterior {
     position: fixed;
@@ -757,7 +807,6 @@ margin-top: 20px;
     top: 50%;
     margin: 30px;
 }
-
 
 .siguiente {
     position: fixed;
@@ -890,7 +939,133 @@ margin-top: 20px;
 
 }
 
+.Pokemon-slot-vulpix {
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(255, 85, 0, 0.864)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+    transition: all 0.3s;
 
+}
+
+.Pokemon-slot-vulpix {
+    display: flex;
+
+}
+
+
+.Pokemon-slot-vulpix div {
+    padding: 5px;
+}
+
+.Pokemon-slot-vulpix h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-vulpix h3 img {
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-vulpix h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-vulpix img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.Pokemon-slot-vulpix .tipo1 {
+    background-color: rgba(255, 1, 1, 0.622);
+    margin-right: 15px;
+    margin-left: 5px;
+
+}
+
+
+.Pokemon-slot-zubat {
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+   
+    background-repeat: no-repeat;
+     background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(91, 38, 117  )), url(./Imagenes/pokeball-blanca.png);
+ background-repeat:no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+
+.Pokemon-slot-zubat{
+    display: flex;
+
+}
+
+
+.Pokemon-slot-zubat div {
+    padding: 5px;
+}
+
+.Pokemon-slot-zubat h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-zubat h3 img {
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-zubat h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-zubat img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.Pokemon-slot-zubat .tipo1{
+    background-color: rgba(168, 76, 214);
+    margin-right: 15px;
+    margin-left: 5px;
+
+}
+
+.Pokemon-slot-zubat .tipo2{
+    background-color: rgb(67, 155, 255);
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.zubat{
+    transform: scale(0.8);
+ transform-origin: center;
+ width: 199px;
+ margin: auto;
+}
 
 
 
@@ -972,6 +1147,27 @@ margin-top: 20px;
     transform-style: preserve-3d;
 }
 
+.Pokemon-slot-clefairy:hover{
+    background-color: rgb(144, 0, 166);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.Pokemon-slot-vulpix:hover{
+        background-color: rgb(129, 19, 0);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.Pokemon-slot-zubat:hover{
+    background-color: rgba(83, 149, 250, 0.699);
+    cursor: pointer;
+    transform: translate3d(0px,0px,0px) scale3d(0.9,0.9,1)
+    rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
+    transform-style: preserve-3d;
+}
 
 
 
