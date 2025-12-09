@@ -19,9 +19,7 @@ html {
     }
 }
 
-.barra-animada {
-    animation: barraExpand 0.8s ease-out forwards;
-}
+
 
 header {
     background-color: rgba(0, 0, 0, 0);
@@ -458,20 +456,19 @@ main {
     width: 100%;
     padding: 2px;
     border-radius: 10px;
+     width: 300px;
 }
 
 .barra-dentro p {
-    background-color: rgb(211, 255, 66);
-    width: 200px;
+    background-color: rgb(255, 210, 63);
+    width: 20px;
     border-radius: 10px;
     padding: 2px;
+    
 
 }
 
-.barra-dentro {
 
-    width: 300px;
-}
 
 .Pokemon-slot-weedle {
     display: flex;

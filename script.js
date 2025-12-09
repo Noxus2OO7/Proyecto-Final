@@ -12,7 +12,7 @@ const BARS = [barra_PS, barra_ataque, barra_defensa, barra_ataque_s, barra_defen
 
 // Agregar transición suave a todos los elementos de barras
 BARS.forEach(bar => {
-    if (bar) bar.style.transition = 'width 0.6s ease, color 0.3s ease';
+    if (bar) bar.style.transition = 'width 1.7s ease, color 0.3s ease';
 });
 
 // Agregar transición a foto y descripción
@@ -32,19 +32,19 @@ function cambiarDato(urlImagen, descripcionTexto, ps, atk, def, spa, spd, spe) {
         pokemon_foto.style.opacity = '1';
         descripcion.style.opacity = '1';
     }, 150);
-
+    
     const stats = [ps, atk, def, spa, spd, spe];
     stats.forEach((value, i) => {
         const el = BARS[i];
         if (!el || value == null) return;
-
-      
+        
+        
         let stat = typeof value === 'string' && value.endsWith('px')
-            ? Math.round(parseInt(value, 10) / SCALE)
-            : Number(value);
-
+        ? Math.round(parseInt(value, 10) / SCALE)
+        : Number(value);
+        
         if (isNaN(stat)) return;
-
+        
         el.style.width = (stat * SCALE) + 'px';
         el.textContent = String(stat);
     });
@@ -59,9 +59,9 @@ document.querySelectorAll('[onclick*="cambiarDato("]').forEach(el => {
             const targetPosition = target.getBoundingClientRect().top + window.scrollY;
             const startPosition = window.scrollY;
             const distance = targetPosition - startPosition;
-            const duration = 2; // 1.2 segundos
+            const duration = 1000; // 1.2 segundos
             let start = null;
-
+            
             function animation(currentTime) {
                 if (start === null) start = currentTime;
                 const elapsed = currentTime - start;
@@ -81,3 +81,27 @@ document.querySelectorAll('[onclick*="cambiarDato("]').forEach(el => {
         }
     });
 });
+
+if (barra_PS.offsetWidth < 70) {
+    barra_PS.style.backgroundColor = "red";
+
+} else if (barra_PS.offsetWidth < 130) {
+    barra_PS.style.backgroundColor = "orange";
+
+} else {
+    barra_PS.style.backgroundColor = "green";
+}
+
+
+    
+
+    
+
+
+
+    
+    
+    
+    
+    
+    
