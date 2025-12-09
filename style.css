@@ -84,11 +84,12 @@ header img {
 
 
 .pokedex-foto img {
-    height: 400px;
+    height: 350px;
     background-color: #00000000;
     width: auto;
     margin-left: 250px;
     margin-top: 70px;
+    
 }
 
 .Pokemon-select {
