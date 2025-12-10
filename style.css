@@ -111,11 +111,11 @@ margin-bottom: 10%;
 
 
 .pokedex-foto img {
-    height: 350px;
+    height: 400px;
     background-color: #00000000;
     width: auto;
     margin-left: 250px;
-    margin-top: 70px;
+    margin-top: 70px;   
 
 }
 
@@ -226,7 +226,7 @@ main {
 
 
 .tipo1 {
-    background-color: rgb(0, 255, 13);
+    background-color: rgb(55, 167, 92);
     margin-right: 15px;
     margin-left: 5px;
 }
@@ -343,8 +343,6 @@ main {
 }
 
 
-
-
 .Pokemon-slot-agua {
     display: flex;
     padding: 10px;
@@ -408,6 +406,7 @@ main {
 .Pokemon-slot-agua h2 {
     margin-top: -20px;
 }
+
 
 .Pokemon-slot-bicho {
     display: flex;
@@ -476,14 +475,6 @@ main {
 .Psiquico {
     border-radius: 50%;
 }
-
-
-
-
-
-
-
-
 
 
 .Pokemon-slot-weedle {
@@ -603,11 +594,6 @@ main {
 
 }
 
-.Pokemon-slot-ratatta .tipo2 {
-    background-color: rgb(67, 155, 255);
-    margin-right: 15px;
-    margin-left: 5px;
-}
 
 
 .Pokemon-slot-veneno {
@@ -1152,7 +1138,7 @@ main {
 }
 
 .Pokemon-slot-paras .tipo2 {
-    background-color: rgb(0, 255, 13);
+    background-color: rgb(55, 167, 92);
     margin-right: 15px;
     margin-left: 5px;
 }
@@ -1217,6 +1203,171 @@ main {
     background-color: rgb(168, 76, 214);
     margin-right: 15px;
     margin-left: 5px;
+}
+
+.Pokemon-slot-oddish{
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(6, 120, 0)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+
+.Pokemon-slot-oddish {
+    display: flex;
+
+}
+
+
+.Pokemon-slot-oddish div {
+    padding: 5px;
+}
+
+.Pokemon-slot-oddish h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-oddish h3 img {
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-oddish h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-oddish img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.Pokemon-slot-oddish .tipo1 {
+    background-color: rgb(55, 167, 92);
+    margin-right: 15px;
+    margin-left: 5px;
+
+}
+
+.Pokemon-slot-oddish .tipo2 {
+    background-color: rgb(168, 76, 214);
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+
+.Pokemon-slot-meowth{
+        display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(172, 172, 172)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+.Pokemon-slot-meowth div {
+    padding: 5px;
+}
+
+.Pokemon-slot-meowth h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-meowth h3 img {
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-meowth h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-meowth img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.Pokemon-slot-meowth .tipo1 {
+    background-color: rgb(161, 163, 160);
+    margin-right: 15px;
+    margin-left: 5px;
+
+}
+
+.Pokemon-slot-mankey{
+        display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(224, 33, 97)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+.Pokemon-slot-mankey div {
+    padding: 5px;
+}
+
+.Pokemon-slot-mankey h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-mankey h3 img {
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-mankey h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-mankey img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.Pokemon-slot-mankey .tipo1 {
+    background-color: rgb(224, 33, 97);
+    margin-right: 15px;
+    margin-left: 5px;
+
 }
 
 
@@ -1333,6 +1484,37 @@ main {
     transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 }
+
+
+.Pokemon-slot-oddish:hover{
+        background-color: rgba(182, 65, 208, 0.952);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.Pokemon-slot-meowth:hover{
+            background-color: rgb(253, 226, 138);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.Pokemon-slot-mankey:hover{
+        background-color: rgb(129, 19, 0);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+
+
+
+
+
+
+
+
 
 /*trabajo de ricardo */
 
