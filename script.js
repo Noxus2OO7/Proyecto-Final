@@ -23,12 +23,12 @@ function cambiarIdioma() {
   
     idiomaBtn.textContent = idiomaActual === 'es' ? 'EN' : 'ES';
     
-    // Cambiar todos los elementos con atributos data-es y data-en
+   
     document.querySelectorAll('[data-es][data-en]').forEach(el => {
         const text = idiomaActual === 'es' ? el.dataset.es : el.dataset.en;
         const img = el.querySelector && el.querySelector('img');
         if (img) {
-            // conservar las imágenes; eliminar nodos de texto existentes y añadir el texto traducido
+            
             Array.from(el.childNodes).forEach(node => {
                 if (node.nodeType === Node.TEXT_NODE) node.remove();
             });
@@ -38,7 +38,7 @@ function cambiarIdioma() {
         }
     });
     
-    // Si existe un slot seleccionado y tiene descripciones traducidas, actualizar la descripción mostrada
+    
     if (currentSlot) {
         const descKey = idiomaActual === 'es' ? 'descEs' : 'descEn';
         const desc = currentSlot.dataset[descKey];
@@ -51,12 +51,12 @@ function cambiarIdioma() {
     localStorage.setItem('idioma', idiomaActual);
 }
 
-// Agregar evento al botón
+
 if (idiomaBtn) {
     idiomaBtn.addEventListener('click', cambiarIdioma);
 }
 
-// Cargar idioma guardado
+
 window.addEventListener('DOMContentLoaded', () => {
     const idiomaGuardado = localStorage.getItem('idioma');
     if (idiomaGuardado && idiomaGuardado !== 'es') {
@@ -72,7 +72,7 @@ function cambiarDato(urlImagen, descripcionTexto, ps, atk, def, spa, spd, spe) {
     setTimeout(() => {
         if (urlImagen) pokemon_foto.src = urlImagen;
         
-        // Usar descripción del idioma actual si existe currentSlot con atributo, sino usar parámetro
+        
         if (currentSlot) {
             const descKey = idiomaActual === 'es' ? 'descEs' : 'descEn';
             const desc = currentSlot.dataset[descKey];
@@ -102,15 +102,15 @@ function cambiarDato(urlImagen, descripcionTexto, ps, atk, def, spa, spd, spe) {
 
         if (isNaN(stat)) return;
 
-        // Obtener el contenedor (.barra-dentro)
-        const container = bar.parentElement; // .barra-dentro
+        
+        const container = bar.parentElement; 
         if (container) {
-            // Reset la animación removiendo y re-agregando la clase o forzando reflow
+            
             container.style.animation = 'none';
             container.offsetHeight; // Forzar reflow
             container.style.animation = '';
             
-            // Ahora establecer el ancho que quiere alcanzar
+            
             container.style.width = (stat * SCALE) + 'px';
         }
         bar.textContent = String(stat);
@@ -140,11 +140,11 @@ document.querySelectorAll('[onclick*="cambiarDato("]').forEach(el => {
         currentSlot = el;
         const target = document.getElementById('pokemon-select');
         if (target) {
-            // Scroll suave personalizado más lento (1.2 segundos)
+            
             const targetPosition = target.getBoundingClientRect().top + window.scrollY;
             const startPosition = window.scrollY;
             const distance = targetPosition - startPosition;
-            const duration = 1; // duración en ms (1.2 segundos)
+            const duration = 1; 
             let start = null;
             
             function animation(currentTime) {
@@ -152,7 +152,7 @@ document.querySelectorAll('[onclick*="cambiarDato("]').forEach(el => {
                 const elapsed = currentTime - start;
                 const progress = Math.min(elapsed / duration, 100);
                 
-                // Easing: ease-out (más rápido al inicio, más lento al final)
+                
                 const easeProgress = 1 - Math.pow(1 - progress, 3);
                 
                 window.scrollTo(0, startPosition + distance * easeProgress);
