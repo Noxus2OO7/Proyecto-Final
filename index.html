@@ -14,48 +14,49 @@
 
   <header>
     <img src="./Imagenes/pngegg.png" alt="">
+    <button id="idioma-btn" class="idioma-btn">EN</button>
   </header>
 
   <div class="Pokemon-select" id="pokemon-select">
 
     <div class="card" id="pokemon-info">
       <div class="face front" id="pokemon-cat">
-        <h3>PS:</h3>
+        <h3 data-es="PS:" data-en="HP:">PS:</h3>
         <div class="barra-fuera">
           <div class="barra-dentro">
             <p id="PS">0</p>
           </div>
         </div>
 
-        <h3>Ataque: </h3>
+        <h3 data-es="Ataque: " data-en="Attack: ">Ataque: </h3>
         <div class="barra-fuera">
           <div class="barra-dentro">
             <p id="ataque">0</p>
           </div>
         </div>
 
-        <h3>Defensa: </h3>
+        <h3 data-es="Defensa: " data-en="Defense: ">Defensa: </h3>
         <div class="barra-fuera">
           <div class="barra-dentro">
             <p id="defensa">0</p>
           </div>
         </div>
 
-        <h3>Ataque.S: </h3>
+        <h3 data-es="Ataque.S: " data-en="Sp. Atk: ">Ataque.S: </h3>
         <div class="barra-fuera">
           <div class="barra-dentro">
             <p id="ataque.s">0</p>
           </div>
         </div>
 
-        <h3>Defensa.S: </h3>
+        <h3 data-es="Defensa.S: " data-en="Sp. Def: ">Defensa.S: </h3>
         <div class="barra-fuera">
           <div class="barra-dentro">
             <p id="defensa.s">0</p>
           </div>
         </div>
 
-        <h3>Velocidad: </h3>
+        <h3 data-es="Velocidad: " data-en="Speed: ">Velocidad: </h3>
         <div class="barra-fuera">
           <div class="barra-dentro">
             <p id="Velocidad">0</p>
@@ -65,7 +66,7 @@
 
       <div class="face back">
 
-        <h1>Descripción en la Pokedex</h1>
+        <h1 data-es="Descripción en la Pokedex" data-en="Pokedex Description">Descripción en la Pokedex</h1>
     <h3 id="descripcion-pokemon"> </h3>
       </div>
     </div>
@@ -79,32 +80,32 @@
   <main>
 
     <div class="cintillo">
-      <span class="tipo-item" data-tipo="Agua"><img src="./Imagenes/Tipo-agua.png" alt="Agua"></span>
-      <span class="tipo-item" data-tipo="Fuego"><img src="./Imagenes/fuego_icon.png" alt="Fuego"></span>
-      <span class="tipo-item" data-tipo="Veneno"><img src="./Imagenes/Veneno_icono.png" alt="Veneno"></span>
-      <span class="tipo-item" data-tipo="Psiquico"><img src="./Imagenes/psiquico_icon.png" alt="Psiquico"></span>
-      <span class="tipo-item" data-tipo="Bicho"><img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="Bicho"></span>
-      <span class="tipo-item" data-tipo="Volador"><img src="./Imagenes/tipo_volador.png" alt="Volador"></span>
-      <span class="tipo-item" data-tipo="Normal"><img src="./Imagenes/Tipo-normal.png" alt="Normal"></span>
-      <span class="tipo-item" data-tipo="Eléctrico"><img src="./Imagenes/Electrico_icono.jpg" alt="Eléctrico"></span>
-      <span class="tipo-item" data-tipo="Tierra"><img src="./Imagenes/icono_tierra.jpg" alt="Tierra"></span>
-      <span class="tipo-item" data-tipo="Roca"><img src="./Imagenes/icono_roca.jpg" alt="Roca"></span>
-      <span class="tipo-item" data-tipo="Planta"><img src="./Imagenes/Planta_icono.jpg" alt="Planta"></span>
-      <span class="tipo-item" data-tipo="Fantasma"><img src="./Imagenes/fantasma-icono.png" alt="Fantasma"></span>
-      <span class="tipo-item" data-tipo="Lucha"><img src="./Imagenes/lucha-icono.png" alt="Lucha"></span>
-      <span class="tipo-item" data-tipo="Hielo"><img src="./Imagenes/hielo-icono.png" alt="Hielo"></span>
-      <span class="tipo-item" data-tipo="Hada"><img src="./Imagenes/tipo_hada.png" alt="Hada"></span>
-      <span class="tipo-item" data-tipo="Dragón"><img src="./Imagenes/dragon-icono.png" alt="Dragón"></span>
+      <span class="tipo-item" data-tipo="Agua" data-es="Agua" data-en="Water"><img src="./Imagenes/Tipo-agua.png" alt="Agua"></span>
+      <span class="tipo-item" data-tipo="Fuego" data-es="Fuego" data-en="Fire"><img src="./Imagenes/fuego_icon.png" alt="Fuego"></span>
+      <span class="tipo-item" data-tipo="Veneno" data-es="Veneno" data-en="Poison"><img src="./Imagenes/Veneno_icono.png" alt="Veneno"></span>
+      <span class="tipo-item" data-tipo="Psíquico" data-es="Psíquico" data-en="Psychic"><img src="./Imagenes/psiquico_icon.png" alt="Psíquico"></span>
+      <span class="tipo-item" data-tipo="Bicho" data-es="Bicho" data-en="Bug"><img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="Bicho"></span>
+      <span class="tipo-item" data-tipo="Volador" data-es="Volador" data-en="Flying"><img src="./Imagenes/tipo_volador.png" alt="Volador"></span>
+      <span class="tipo-item" data-tipo="Normal" data-es="Normal" data-en="Normal"><img src="./Imagenes/Tipo-normal.png" alt="Normal"></span>
+      <span class="tipo-item" data-tipo="Eléctrico" data-es="Eléctrico" data-en="Electric"><img src="./Imagenes/Electrico_icono.jpg" alt="Eléctrico"></span>
+      <span class="tipo-item" data-tipo="Tierra" data-es="Tierra" data-en="Ground"><img src="./Imagenes/icono_tierra.jpg" alt="Tierra"></span>
+      <span class="tipo-item" data-tipo="Roca" data-es="Roca" data-en="Rock"><img src="./Imagenes/icono_roca.jpg" alt="Roca"></span>
+      <span class="tipo-item" data-tipo="Planta" data-es="Planta" data-en="Grass"><img src="./Imagenes/Planta_icono.jpg" alt="Planta"></span>
+      <span class="tipo-item" data-tipo="Fantasma" data-es="Fantasma" data-en="Ghost"><img src="./Imagenes/fantasma-icono.png" alt="Fantasma"></span>
+      <span class="tipo-item" data-tipo="Lucha" data-es="Lucha" data-en="Fighting"><img src="./Imagenes/lucha-icono.png" alt="Lucha"></span>
+      <span class="tipo-item" data-tipo="Hielo" data-es="Hielo" data-en="Ice"><img src="./Imagenes/hielo-icono.png" alt="Hielo"></span>
+      <span class="tipo-item" data-tipo="Hada" data-es="Hada" data-en="Fairy"><img src="./Imagenes/tipo_hada.png" alt="Hada"></span>
+      <span class="tipo-item" data-tipo="Dragón" data-es="Dragón" data-en="Dragon"><img src="./Imagenes/dragon-icono.png" alt="Dragón"></span>
     </div>
 
     <!-- Linea evolutiva Bulbasaur -->
-    <div class="Pokemon-slot"
+    <div class="Pokemon-slot" data-desc-es="Bulbasaur es un Pokémon inicial de tipo Planta/Veneno. Nace con un bulbo en el lomo que absorbe energía solar; usa movimientos como Drenadoras y Rayo Solar. Evoluciona a Ivysaur." data-desc-en="Bulbasaur is a Grass/Poison starter Pokémon. It has a bulb on its back that absorbs solar energy; it uses moves like Leech Seed and Solar Beam. It evolves into Ivysaur." 
       onclick="cambiarDato('./sprites-select/Pkm-1.gif','Bulbasaur es un Pokémon inicial de tipo Planta/Veneno. Nace con un bulbo en el lomo que absorbe energía solar; usa movimientos como Drenadoras y Rayo Solar. Evoluciona a Ivysaur .',45,49,49,65,65,45)">
       <img src="./Imagenes/bulbasaur4.png" alt="">
       <h2>•Bulbasaur•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Planta_icono.jpg" alt="">Planta</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
+        <h3 class="tipo1" data-es="Planta" data-en="Grass"> <img src="./Imagenes/Planta_icono.jpg" alt="">Planta</h3>
+        <h3 class="tipo2" data-es="Veneno" data-en="Poison"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -112,19 +113,19 @@
           <h3>6.9 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
-    <div class="Pokemon-slot"
+    <div class="Pokemon-slot" data-desc-es="Ivysaur: la planta del lomo crece con la energía del sol; más fuerte y resistente que su etapa anterior y posteriormente evoluciona a Venusaur." data-desc-en="Ivysaur: the plant on its back grows with sunlight; stronger and more resilient than its previous stage and later evolves into Venusaur." 
       onclick="cambiarDato('./sprites-select/Pkm-2.gif','Ivysaur: la planta del lomo crece con la energía del sol; más fuerte y resistente que su etapa anterior y posteriormente evoluciona a Venusaur.',60,62,63,80,80,60)">
       <img src="./Imagenes/ivysaur-real.png" alt="" class="ivysaur">
       <h2>•Ivysaur•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Planta_icono.jpg" alt="">Planta</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
+        <h3 class="tipo1" data-es="Planta" data-en="Grass"> <img src="./Imagenes/Planta_icono.jpg" alt="">Planta</h3>
+        <h3 class="tipo2" data-es="Veneno" data-en="Poison"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -132,19 +133,19 @@
           <h3>13 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
-    <div class="Pokemon-slot"
+    <div class="Pokemon-slot" data-desc-es="Venusaur es la forma final de Bulbasaur; su planta florece y le otorga gran poder en combate." data-desc-en="Venusaur is Bulbasaur's final form; its plant blossoms and grants it great power in battle." 
       onclick="cambiarDato('./sprites-select/Pkm-3.gif','Venusaur es la forma final de Bulbasaur; su planta florece y le otorga gran poder en combate.',80,82,83,100,100,80)">
       <img src="./Imagenes/venasaur-real.png" alt="">
       <h2>•Venasaur•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Planta_icono.jpg" alt="">Planta</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
+        <h3 class="tipo1" data-es="Planta" data-en="Grass"> <img src="./Imagenes/Planta_icono.jpg" alt="">Planta</h3>
+        <h3 class="tipo2" data-es="Veneno" data-en="Poison"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -152,19 +153,19 @@
           <h3>100 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
     <!-- Linea evolutiva Charmander -->
-    <div class="Pokemon-slot-fuego"
+    <div class="Pokemon-slot-fuego" data-desc-es="Charmander es un Pokémon de tipo Fuego; su llama indica su salud y aprende poderosos ataques de fuego." data-desc-en="Charmander is a Fire-type Pokémon; its flame indicates its health and it learns powerful fire moves." 
       onclick="cambiarDato('./sprites-select/Pkm-4.gif','Charmander es un Pokémon de tipo Fuego; su llama indica su salud y aprende poderosos ataques de fuego.',39,52,43,60,50,65)">
       <img src="./Imagenes/charmander.png" alt="">
       <h2>•Charmander•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/fuego_icon.png" alt="">Fuego</h3>
+        <h3 class="tipo1" data-es="Fuego" data-en="Fire"> <img src="./Imagenes/fuego_icon.png" alt="">Fuego</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -172,18 +173,20 @@
           <h3>8.5 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
     <div class="Pokemon-slot-fuego"
+      data-desc-es="Charmeleon es la evolución intermedia de Charmander; más rápido y fuerte, con ataques de fuego mejorados."
+      data-desc-en="Charmeleon is the intermediate evolution of Charmander; faster and stronger, with improved fire attacks."
       onclick="cambiarDato('./sprites-select/Pkm-5.gif','Charmeleon es la evolución intermedia de Charmander; más rápido y fuerte, con ataques de fuego mejorados.',58,64,58,80,65,80)">
       <img src="./Imagenes/charmeleon_duro.png" alt="">
       <h2>•Charmeleon•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/fuego_icon.png" alt="">Fuego</h3>
+        <h3 class="tipo1" data-es="Fuego" data-en="Fire"> <img src="./Imagenes/fuego_icon.png" alt="">Fuego</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -191,8 +194,8 @@
           <h3>19 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
@@ -200,32 +203,36 @@
 
     
     <div class="Pokemon-slot-fuego"
+      data-desc-es="Charizard, de tipo Fuego/Volador, domina el aire y el fuego con ataques como Llamarada y Vuelo."
+      data-desc-en="Charizard, Fire/Flying type, dominates the air and fire with attacks like Flamethrower and Fly."
       onclick="cambiarDato('./sprites-select/Pkm-6.gif','Charizard, de tipo Fuego/Volador, domina el aire y el fuego con ataques como Llamarada y Vuelo.',78,84,78,109,85,100)">
       <img src="./Imagenes/charizard.png" alt="" class="charizard">
       <h2>•Charizard•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/fuego_icon.png" alt="">Fuego</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/tipo_volador.png" alt="">Volador</h3>
+        <h3 class="tipo1" data-es="Fuego" data-en="Fire"> <img src="./Imagenes/fuego_icon.png" alt="">Fuego</h3>
+        <h3 class="tipo2" data-es="Volador" data-en="Flying"> <img src="./Imagenes/tipo_volador.png" alt="">Volador</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
           <h3>1.7 M</h3>
-          <h3>90.5 KG</h3>
+          <h3>90 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
     <!-- Linea evolutiva Squirtle -->
     <div class="Pokemon-slot-agua"
+      data-desc-es="Squirtle es un Pokémon de tipo Agua, conocido por su caparazón resistente y potentes ataques acuáticos."
+      data-desc-en="Squirtle is a Water-type Pokémon, known for its resistant shell and powerful water attacks."
       onclick="cambiarDato('./sprites-select/Pkm-7.gif','Squirtle es un Pokémon de tipo Agua, conocido por su caparazón resistente y potentes ataques acuáticos.',44,48,65,50,64,43)">
       <img src="./Imagenes/Squirtle-removebg-preview.png" alt="" class="Squirtle">
       <h2>•Squirtle•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo-agua.png" alt="">Agua</h3>
+        <h3 class="tipo1" data-es="Agua" data-en="Water"> <img src="./Imagenes/Tipo-agua.png" alt="">Agua</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -233,18 +240,20 @@
           <h3>9 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
     <div class="Pokemon-slot-agua"
+      data-desc-es="Wartortle es la evolución de Squirtle, más ágil y con defensas mejoradas."
+      data-desc-en="Wartortle is Squirtle's evolution, more agile and with improved defenses."
       onclick="cambiarDato('./sprites-select/Pkm-8.gif','Wartortle es la evolución de Squirtle, más ágil y con defensas mejoradas.',59,63,80,65,80,58)">
       <img src="./Imagenes/wartortle.png" alt="" class="wartortle">
       <h2>•Wartortle•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo-agua.png" alt="">Agua</h3>
+        <h3 class="tipo1" data-es="Agua" data-en="Water"> <img src="./Imagenes/Tipo-agua.png" alt="">Agua</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -252,18 +261,20 @@
           <h3>22.5 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
     <div class="Pokemon-slot-agua"
+      data-desc-es="Blastoise es la forma final de Squirtle; equipado con cañones de agua, es un tanque en combate."
+      data-desc-en="Blastoise is Squirtle's final form; equipped with water cannons, it is a tank in battle."
       onclick="cambiarDato('./sprites-select/Pkm-9.gif','Blastoise es la forma final de Squirtle; equipado con cañones de agua, es un tanque en combate.',79,83,100,85,105,78)">
       <img src="./Imagenes/blastoise.png" alt="" class="blastoise">
       <h2>•Blastoise•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo-agua.png" alt="">Agua</h3>
+        <h3 class="tipo1" data-es="Agua" data-en="Water"> <img src="./Imagenes/Tipo-agua.png" alt="">Agua</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -271,19 +282,21 @@
           <h3>85.5 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
     <!-- Linea evolutiva Bicho -->
     <div class="Pokemon-slot-bicho"
+      data-desc-es="Caterpie es un Pokémon de tipo Bicho; frágil en combate pero evoluciona rápidamente."
+      data-desc-en="Caterpie is a Bug-type Pokémon; fragile in battle but evolves quickly."
       onclick="cambiarDato('./sprites-select/Pkm-10.gif','Caterpie es un Pokémon de tipo Bicho; frágil en combate pero evoluciona rápidamente.',45,30,35,20,20,45)">
       <img src="./Imagenes/caterpie2.png" alt="" class="caterpie">
       <h2>•Caterpie•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
+        <h3 class="tipo1" data-es="Bicho" data-en="Bug"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -291,18 +304,20 @@
           <h3>2.9 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
     <div class="Pokemon-slot-bicho"
+      data-desc-es="Metapod es la etapa intermedia de Caterpie; su principal defensa es endurecer su caparazón."
+      data-desc-en="Metapod is Caterpie's intermediate stage; its main defense is hardening its shell."
       onclick="cambiarDato('./sprites-select/Pkm-11.gif','Metapod es la etapa intermedia de Caterpie; su principal defensa es endurecer su caparazón.',50,20,55,25,25,30)">
       <img src="./Imagenes/metapod2.png" alt="">
       <h2>•Metapod•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
+        <h3 class="tipo1" data-es="Bicho" data-en="Bug"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -310,19 +325,21 @@
           <h3>9.9 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
     <div class="Pokemon-slot-bicho"
+      data-desc-es="Butterfree es la forma final de Caterpie/Metapod; ágil y con poderosos ataques especiales de tipo Bicho y Volador."
+      data-desc-en="Butterfree is the final form of Caterpie/Metapod; agile and with powerful special Bug and Flying attacks."
       onclick="cambiarDato('./sprites-select/Pkm-12.gif','Butterfree es la forma final de Caterpie/Metapod; ágil y con poderosos ataques especiales de tipo Bicho y Volador.',60,45,50,90,80,70)">
       <img src="./Imagenes/Buteefree.png" alt="">
       <h2>•Butterfree•</h2>
       <div class="Pokemon-tipos">
         <h3 class="tipo1"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/psiquico_icon.png" alt="" class="Psiquico">Psiquico</h3>
+        <h3 class="tipo2" data-es="Psíquico" data-en="Psychic"> <img src="./Imagenes/psiquico_icon.png" alt="" class="Psiquico">Psíquico</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -330,69 +347,75 @@
           <h3>32,0 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
     <!-- Final de la linea evolutiva de Butterfree e inicio de la de Weedle -->
     <div class="Pokemon-slot-weedle"
+      data-desc-es="Weedle es un pequeño Pokémon de tipo Bicho/Veneno; rápido y común en hierbas altas."
+      data-desc-en="Weedle is a small Bug/Poison Pokémon; fast and common in tall grass."
       onclick="cambiarDato('./sprites-select/Pkm-13.gif','Weedle es un pequeño Pokémon de tipo Bicho/Veneno; rápido y común en hierbas altas.',40,35,30,20,20,50)">
       <img src="./Imagenes/WEEDLE.png" alt="" class="caterpie">
       <h2>•Weedle•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
+        <h3 class="tipo1" data-es="Bicho" data-en="Bug"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
+        <h3 class="tipo2" data-es="Veneno" data-en="Poison"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
-          <h3>0,3 M</h3>
-          <h3>3,2 KG</h3>
+          <h3>0.3 M</h3>
+          <h3>3.2 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
     <!--Kakuna-->
     <div class="Pokemon-slot-weedle"
+      data-desc-es="Kakuna es la etapa intermedia de Weedle; su defensa aumenta al endurecer su caparazón."
+      data-desc-en="Kakuna is Weedle's intermediate stage; its defense increases by hardening its shell."
       onclick="cambiarDato('./sprites-select/Pkm-14.gif','Kakuna es la etapa intermedia de Weedle; su defensa aumenta al endurecer su caparazón.',45,25,50,25,25,35)">
       <img src="./Imagenes/Kakuna.png" alt="" class="caterpie">
       <h2>•Kakuna•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
+        <h3 class="tipo1" data-es="Bicho" data-en="Bug"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
+        <h3 class="tipo2" data-es="Veneno" data-en="Poison"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
-          <h3>0,6 M</h3>
-          <h3>10,0 KG</h3>
+          <h3>0.6 M</h3>
+          <h3>10 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
     <!--Beedril-->
     <div class="Pokemon-slot-weedle"
+      data-desc-es="Beedrill es un Pokémon agresivo de tipo Bicho/Veneno; rápido y con ataques punzantes poderosos."
+      data-desc-en="Beedrill is an aggressive Bug/Poison Pokémon; fast and with powerful piercing attacks."
       onclick="cambiarDato('./sprites-select/Pkm-15.gif','Beedrill es un Pokémon agresivo de tipo Bicho/Veneno; rápido y con ataques punzantes poderosos.',65,90,40,45,80,75)">
       <img src="./Imagenes/Beedrill-Pokemon-PNG-HD-Images.png" alt="" class="caterpie">
       <h2>•Beedril•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
+        <h3 class="tipo1" data-es="Bicho" data-en="Bug"> <img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="">Bicho</h3>
+        <h3 class="tipo2" data-es="Veneno" data-en="Poison"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
-          <h3>1,0 M</h3>
-          <h3>29,5 KG</h3>
+          <h3>1 M</h3>
+          <h3>29.5 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
@@ -400,52 +423,58 @@
 
     <!-- Final de la linea evolutiva de Beedril e inicio de la de Pidgey -->
     <div class="Pokemon-slot-normal-volador"
+      data-desc-es="Pidgey es un pájaro pequeño y común; usa ataques de tipo Normal y Volador."
+      data-desc-en="Pidgey is a small and common bird; uses Normal and Flying type attacks."
       onclick="cambiarDato('./sprites-select/Pkm-16.gif','Pidgey es un pájaro pequeño y común; usa ataques de tipo Normal y Volador.',40,45,40,35,35,56)">
       <img src="./Imagenes/Pidgey.png" alt="">
       <h2>•Pidgey•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/tipo_volador.png" alt="" class="Volador">Volador</h3>
+        <h3 class="tipo1" data-es="Normal" data-en="Normal"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
+        <h3 class="tipo2" data-es="Volador" data-en="Flying"> <img src="./Imagenes/tipo_volador.png" alt="">Volador</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
-          <h3>0,3 M</h3>
-          <h3>1,8 KG</h3>
+          <h3>0.3 M</h3>
+          <h3>1.8 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
     <div class="Pokemon-slot-normal-volador"
+      data-desc-es="Pidgeotto es la forma evolucionada de Pidgey; más fuerte y con mejor visión para cazar."
+      data-desc-en="Pidgeotto is Pidgey's evolved form; stronger and with better hunting vision."
       onclick="cambiarDato('./sprites-select/Pkm-17.gif','Pidgeotto es la forma evolucionada de Pidgey; más fuerte y con mejor visión para cazar.',63,60,55,50,50,71)">
       <img src="./Imagenes/pidgeotto.png" alt="">
       <h2>•Pidgeotto•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/tipo_volador.png" alt="" class="Volador">Volador</h3>
+        <h3 class="tipo1" data-es="Normal" data-en="Normal"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
+        <h3 class="tipo2" data-es="Volador" data-en="Flying"> <img src="./Imagenes/tipo_volador.png" alt="">Volador</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
-          <h3>1,1 M</h3>
-          <h3>30,0 KG</h3>
+          <h3>1.1 M</h3>
+          <h3>30 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
     <div class="Pokemon-slot-normal-volador"
+      data-desc-es="Pidgeot es un ave grande y poderosa; excelente para acompañar entrenadores en vuelo."
+      data-desc-en="Pidgeot is a large and powerful bird; excellent for accompanying trainers in flight."
       onclick="cambiarDato('./sprites-select/Pkm-18.gif','Pidgeot es un ave grande y poderosa; excelente para acompañar entrenadores en vuelo.',83,80,75,70,70,101)">
       <img src="./Imagenes/Pidgeot.png" alt="">
       <h2>•Pidgeot•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/tipo_volador.png" alt="" class="Volador">Volador</h3>
+        <h3 class="tipo1" data-es="Normal" data-en="Normal"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
+        <h3 class="tipo2" data-es="Volador" data-en="Flying"> <img src="./Imagenes/tipo_volador.png" alt="" class="Volador">Volador</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -462,11 +491,13 @@
     <!-- Final de la linea evolutiva de Pidgeot e inicio de la de Rattata -->
 
     <div class="Pokemon-slot-ratatta"
+      data-desc-es="Rattata es un roedor veloz y territorial; ataca en manada y es muy común."
+      data-desc-en="Rattata is a fast and territorial rodent; attacks in packs and is very common."
       onclick="cambiarDato('./sprites-select/Pkm-19.gif','Rattata es un roedor veloz y territorial; ataca en manada y es muy común.',30,56,35,25,35,72)">
       <img src="./Imagenes/rattata.png" alt="">
       <h2>•Rattata•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
+        <h3 class="tipo1" data-es="Normal" data-en="Normal"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -482,11 +513,13 @@
 
 
     <div class="Pokemon-slot-ratatta"
+      data-desc-es="Raticate es la evolución de Rattata; más grande, fuerte y con incisivos poderosos."
+      data-desc-en="Raticate is Rattata's evolution; larger, stronger, and with powerful incisors."
       onclick="cambiarDato('./sprites-select/Pkm-20.gif','Raticate es la evolución de Rattata; más grande, fuerte y con incisivos poderosos.',55,81,60,50,70,97)">
       <img src="./Imagenes/Pokemans_020.webp" alt="">
       <h2>•Raticate•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
+        <h3 class="tipo1" data-es="Normal" data-en="Normal"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -503,32 +536,36 @@
     <!-- Final de la linea evolutiva de Raticate e inicio de la de Spearow -->
 
     <div class="Pokemon-slot-normal-volador"
+      data-desc-es="Spearow es un pájaro agresivo de pequeño tamaño; rápido y con picos puntiagudos."
+      data-desc-en="Spearow is an aggressive small bird; fast and with sharp beaks."
       onclick="cambiarDato('./sprites-select/Pkm-21.gif','Spearow es un pájaro agresivo de pequeño tamaño; rápido y con picos puntiagudos.',40,60,30,31,31,70)">
       <img src="./Imagenes/spearow.png" alt="">
-      <h2>•Spearow•</h2>
+      <h2>•Pidgeot•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/tipo_volador.png" alt="" class="Volador">Volador</h3>
+        <h3 class="tipo1" data-es="Normal" data-en="Normal"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
+        <h3 class="tipo2" data-es="Volador" data-en="Flying"> <img src="./Imagenes/tipo_volador.png" alt="">Volador</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
-          <h3>0.3 M</h3>
-          <h3>2,0 KG</h3>
+          <h3>1.5 M</h3>
+          <h3>39.5 KG</h3>
         </div>
         <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
+          <h3 data-es="Altura" data-en="Height">Altura</h3>
+          <h3 data-es="Peso" data-en="Weight">Peso</h3>
         </div>
       </div>
     </div>
 
     <div class="Pokemon-slot-normal-volador"
+      data-desc-es="Fearow es un ave grande y rápida; excelente para ataques de largo alcance desde el aire."
+      data-desc-en="Fearow is a large and fast bird; excellent for long-range attacks from the air."
       onclick="cambiarDato('./sprites-select/Pkm-22.gif','Fearow es un ave grande y rápida; excelente para ataques de largo alcance desde el aire.',65,90,65,61,61,100)">
       <img src="./Imagenes/FEAROW.png" alt="">
       <h2>•Fearow•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
-        <h3 class="tipo2"> <img src="./Imagenes/tipo_volador.png" alt="" class="Volador">Volador</h3>
+        <h3 class="tipo1" data-es="Normal" data-en="Normal"> <img src="./Imagenes/Tipo-normal.png" alt="">Normal</h3>
+        <h3 class="tipo2" data-es="Volador" data-en="Flying"> <img src="./Imagenes/tipo_volador.png" alt="" class="Volador">Volador</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -545,11 +582,13 @@
     <!-- Final de la linea evolutiva de Fearow e inicio de la de Ekans -->
 
     <div class="Pokemon-slot-veneno"
+      data-desc-es="Ekans es una serpiente Pokémon de tipo Veneno; se enrosca y ataca con mordiscos venenosos."
+      data-desc-en="Ekans is a Poison-type snake Pokémon; it coils and attacks with poisonous bites."
       onclick="cambiarDato('./sprites-select/Pkm-23.gif','Ekans es una serpiente Pokémon de tipo Veneno; se enrosca y ataca con mordiscos venenosos.',35,60,44,40,54,55)">
       <img src="./Imagenes/ekans.png" alt="">
       <h2>•Ekans•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
+        <h3 class="tipo1" data-es="Veneno" data-en="Poison"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
 
       </div>
       <div class="Datos-todo">
@@ -565,11 +604,13 @@
     </div>
 
     <div class="Pokemon-slot-veneno"
+      data-desc-es="Arbok es la forma evolucionada de Ekans; su cuerpo tiene patrones intimidantes y gran potencia física."
+      data-desc-en="Arbok is Ekans' evolved form; its body has intimidating patterns and great physical power."
       onclick="cambiarDato('./sprites-select/Pkm-24.gif','Arbok es la forma evolucionada de Ekans; su cuerpo tiene patrones intimidantes y gran potencia física.',60,85,69,65,79,80)">
       <img src="./Imagenes/Arbok.png" alt="">
       <h2>•Arbok•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
+        <h3 class="tipo1" data-es="Veneno" data-en="Poison"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -586,11 +627,13 @@
     <!--Linea evolutiva de pikachu-->
 
     <div class="Pokemon-slot-electrico"
+      data-desc-es="Pikachu es un Pokémon eléctrico emblemático; almacena electricidad en sus mejillas y ataca con Impactrueno."
+      data-desc-en="Pikachu is an iconic electric Pokémon; stores electricity in its cheeks and attacks with Thunderbolt."
       onclick="cambiarDato('./sprites-select/Pkm-25.gif','Pikachu es un Pokémon eléctrico emblemático; almacena electricidad en sus mejillas y ataca con Impactrueno.',35,55,40,50,50,90)">
       <img src="./Imagenes/pikachu.webp" alt="">
       <h2>•Pikachu•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Electrico_icono.jpg" alt="">Eletrico</h3>
+        <h3 class="tipo1" data-es="Eléctrico" data-en="Electric"> <img src="./Imagenes/Electrico_icono.jpg" alt="">Eléctrico</h3>
 
       </div>
       <div class="Datos-todo">
@@ -606,11 +649,13 @@
     </div>
 
     <div class="Pokemon-slot-electrico"
+      data-desc-es="Raichu es la evolución de Pikachu; más grande y con descargas eléctricas más potentes."
+      data-desc-en="Raichu is Pikachu's evolution; larger and with more powerful electric discharges."
       onclick="cambiarDato('./sprites-select/Pkm-26.gif','Raichu es la evolución de Pikachu; más grande y con descargas eléctricas más potentes.',60,90,55,90,80,110)">
       <img src="./Imagenes/raichu.png" alt="">
       <h2>•Raichu•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Electrico_icono.jpg" alt="">Electrico</h3>
+        <h3 class="tipo1" data-es="Eléctrico" data-en="Electric"> <img src="./Imagenes/Electrico_icono.jpg" alt="">Electrico</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -626,11 +671,13 @@
 
     <!--Final de la linea de pikachu y inicio de la linea evolutiva de sandshrew-->
     <div class="Pokemon-slot-Tierra"
+      data-desc-es="Sandshrew es un Pokémon de tipo Tierra; su piel lo protege y excava madrigueras."
+      data-desc-en="Sandshrew is a Ground-type Pokémon; its skin protects it and it digs burrows."
       onclick="cambiarDato('./sprites-select/Pkm-27.gif','Sandshrew es un Pokémon de tipo Tierra; su piel lo protege y excava madrigueras.',50,75,85,20,30,40)">
       <img src="./Imagenes/Sandrew.png" alt="">
       <h2>•Sandshrew•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/tipo_tierra.png" alt="">Tierra</h3>
+        <h3 class="tipo1" data-es="Tierra" data-en="Ground"> <img src="./Imagenes/tipo_tierra.png" alt="">Tierra</h3>
 
       </div>
       <div class="Datos-todo">
@@ -646,11 +693,13 @@
     </div>
 
     <div class="Pokemon-slot-Tierra"
+      data-desc-es="Sandslash es la evolución de Sandshrew; más armado en defensa y ataques físicos potentes."
+      data-desc-en="Sandslash is Sandshrew's evolution; more armored in defense and with powerful physical attacks."
       onclick="cambiarDato('./sprites-select/Pkm-28.gif','Sandslash es la evolución de Sandshrew; más armado en defensa y ataques físicos potentes.',75,100,110,45,55,65)">
       <img src="./Imagenes/sandslash.png" alt="">
       <h2>•Sandslash•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/tipo_tierra.png" alt="">Tierra</h3>
+        <h3 class="tipo1" data-es="Tierra" data-en="Ground"> <img src="./Imagenes/tipo_tierra.png" alt="">Tierra</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -668,11 +717,13 @@
 
 
     <div class="Pokemon-slot-veneno"
+      data-desc-es="Nidoran♀ es una especie venenosa pequeña; puede usar el veneno para defenderse."
+      data-desc-en="Nidoran♀ is a small poisonous species; can use poison to defend itself."
       onclick="cambiarDato('./sprites-select/Pkm-29.gif','Nidoran♀ es una especie venenosa pequeña; puede usar el veneno para defenderse.',55,47,52,40,40,41)">
       <img src="./Imagenes/Nidoran H.png" alt="">
       <h2>•Nidoran♀•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
+        <h3 class="tipo1" data-es="Veneno" data-en="Poison"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
 
       </div>
       <div class="Datos-todo">
@@ -688,11 +739,13 @@
     </div>
 
     <div class="Pokemon-slot-veneno"
+      data-desc-es="Nidoran♂ es una especie venenosa; difiere ligeramente en estadísticas y evolución respecto a la hembra."
+      data-desc-en="Nidoran♂ is a poisonous species; differs slightly in stats and evolution from the female."
       onclick="cambiarDato('./sprites-select/Pkm-32.gif','Nidoran♂ es una especie venenosa; difiere ligeramente en estadísticas y evolución respecto a la hembra.',46,57,40,40,40,50)">
       <img src="./Imagenes/Nidoran M.png" alt="">
       <h2>•Nidoran♂•</h2>
       <div class="Pokemon-tipos">
-        <h3 class="tipo1"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
+        <h3 class="tipo1" data-es="Veneno" data-en="Poison"> <img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
       </div>
       <div class="Datos-todo">
         <div class="Pokemon-datos">
@@ -706,9 +759,40 @@
       </div>
     </div>
 
-
-
   </main>
+
+<footer>
+ <div class="izquierda">
+  <h1 data-es="Descripción de la página" data-en="Page description">Descripción de la página</h1>
+  <h3 data-es="Lista de 151 Pokemon, es decir, toda la primera generación completa, sin megas, formas regionales ni gigamax (era mucho trabajo para tan poco tiempo)" data-en="List of 151 Pokémon — the full first generation, no megas, regional forms or Gigantamax (that was a lot of work for little time)">Lista de 151 Pokemon, es decir, toda la primera generación completa, sin megas, formas regionales ni gigamax (era mucho trabajo para tan poco tiempo)</h3>
+  
+  
+ </div>
+
+
+<div class="medio">
+<h2 data-es="Nuestras Redes" data-en="Our Networks">Nuestras Redes</h2>
+
+<div class="red1">
+  <img src="./redes/Insta-removebg-preview.png" alt=""> <a href="https://www.instagram.com/ricawnil/"> <h4 data-es="@Ricawnil" data-en="@Ricawnil">@Ricawnil</h4> </a> 
+
+</div>
+<div class="red">
+  <img src="./redes/Insta-removebg-preview.png" alt=""> <a href="https://www.instagram.com/mr_kevin094/"> <h4 data-es="@Mr_Kevin094" data-en="@Mr_Kevin094">@Mr_Kevin094</h4></a>  
+</div>
+<hr>
+<div class="red3">
+  <img src="./redes/logo-github-blanco.png" alt=""> <a href="https://github.com/Track1at01"> <h4 data-es="@Track1at01" data-en="@Track1at01">@Track1at01</h4> </a> 
+
+</div>
+<div class="red3">
+  <img src="./redes/logo-github-blanco.png" alt=""> <a href="https://github.com/Noxus2OO7"> <h4 data-es="@Noxus2007" data-en="@Noxus2007">@Noxus2007</h4></a>  
+</div>
+ </div>
+ 
+</footer>
+
+
 
   <a href="" class="anterior"></a>
   <a href="./index2.html" class="siguiente"></a>

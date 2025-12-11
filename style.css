@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: arial;
 }
 
 html {
@@ -15,7 +16,6 @@ html {
     }
 
     to {
-        width: 100%;
         opacity: 1;
     }
 }
@@ -38,73 +38,109 @@ header img {
     height: 50px;
 }
 
-.card{
+.idioma-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #ff6b6b, #ffd93d);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 101;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+.idioma-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+}
+
+.idioma-btn:active {
+    transform: scale(0.95);
+}
+
+.card {
     position: relative;
     width: 300px;
     height: 300px;
-    margin-left:20%;
+    margin-left: 20%;
     margin-top: 3%;
     margin-right: 5%;
 }
-.card .face{
-position: absolute;
-width: 100%;
-height: 100%;
-backface-visibility: hidden;
-border-radius: 10px;
-overflow: hidden;
-transition: 0.5s;
-   padding: 20px;
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 20px;
     background-color: rgb(255, 255, 255);
     border: solid 2px #ff0000;
     border-radius: 20px;
 }
 
 
-.card .front{
+.card .front {
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 40px #000000a5;
     background-color: #ffffff;
-    
+
 }
 
-.card .front{ 
+.card .front {
     font-weight: bolder;
 }
 
-.card .back{
-text-align: center;
+.card .back {
+    text-align: center;
     transform: perspective(600px) rotateY(100deg);
     background-color: #fffffffb;
     box-shadow: 0 5px 40px #000000a5;
 }
 
-.card .back h1{
-margin-bottom: 10%;
+.card .back h1 {
+    margin-bottom: 10%;
 
-    
+
 }
+
 .barra-fuera {
     background-color: #e6e6e6;
     width: 100%;
     padding: 2px;
     border-radius: 10px;
     width: 300px;
-    box-shadow:  0 1px 10px #00000058;
+    box-shadow: 0 1px 10px #00000058;
     margin-bottom: 4px;
 }
 
+.barra-dentro{
+    border-radius: 20px;
+    width: 0;
+    height: 20px;
+    transition: width 450ms ease, background-color 300ms ease;
+    animation: barraExpand 0.6s ease-out forwards;
+}
+
 .barra-dentro p {
-    background-color: rgba(255, 0, 0, 0.337);
+    background-color: rgba(255, 255, 255, 0);
     width: 20px;
     border-radius: 10px;
     padding: 2px;
 }
 
-.card:hover .front{
+.card:hover .front {
     transform: perspective(600px) rotateY(180deg);
 }
-.card:hover .back{
+
+.card:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
 
@@ -115,7 +151,7 @@ margin-bottom: 10%;
     background-color: #00000000;
     width: auto;
     margin-left: 250px;
-    margin-top: 70px;   
+    margin-top: 70px;
 
 }
 
@@ -1205,7 +1241,7 @@ main {
     margin-left: 5px;
 }
 
-.Pokemon-slot-oddish{
+.Pokemon-slot-oddish {
     display: flex;
     padding: 10px;
     border-radius: 30px;
@@ -1268,8 +1304,8 @@ main {
 }
 
 
-.Pokemon-slot-meowth{
-        display: flex;
+.Pokemon-slot-meowth {
+    display: flex;
     padding: 10px;
     border-radius: 30px;
     flex-direction: column;
@@ -1285,6 +1321,7 @@ main {
     transition: all 0.3s;
 
 }
+
 .Pokemon-slot-meowth div {
     padding: 5px;
 }
@@ -1319,8 +1356,8 @@ main {
 
 }
 
-.Pokemon-slot-mankey{
-        display: flex;
+.Pokemon-slot-mankey {
+    display: flex;
     padding: 10px;
     border-radius: 30px;
     flex-direction: column;
@@ -1336,6 +1373,7 @@ main {
     transition: all 0.3s;
 
 }
+
 .Pokemon-slot-mankey div {
     padding: 5px;
 }
@@ -1486,37 +1524,133 @@ main {
 }
 
 
-.Pokemon-slot-oddish:hover{
-        background-color: rgba(182, 65, 208, 0.952);
+.Pokemon-slot-oddish:hover {
+    background-color: rgba(182, 65, 208, 0.952);
     cursor: pointer;
     transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 }
 
-.Pokemon-slot-meowth:hover{
-            background-color: rgb(253, 226, 138);
+.Pokemon-slot-meowth:hover {
+    background-color: rgb(253, 226, 138);
     cursor: pointer;
     transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 }
 
-.Pokemon-slot-mankey:hover{
-        background-color: rgb(129, 19, 0);
+.Pokemon-slot-mankey:hover {
+    background-color: rgb(129, 19, 0);
     cursor: pointer;
     transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 }
 
 
+footer {
+    color: whitesmoke;
+    margin-top: 5%;
+    height: 440px;
+    width: 100%;
+    display: flex;
+    background-image: url(./redes/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top: solid 1px honeydew;
+}
+
+.medio img {
+    height: 30px;
+    width: 60px;
+}
+
+.medio {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border: solid 1px honeydew;
+    border-radius: 30px;
+    height: 270px;
+    margin-top: 3%;
+    box-shadow: 0 0px 10px #e6e6e6;
+}
+
+.medio h2 {
+    margin-bottom: 10px;
+    padding: 20px;
+
+}
+
+.izquierda {
+    margin-top: 3%;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    margin-right: 50%;
+    margin-left: 170px;
+    border-radius: 30px;
+    border: solid 1px honeydew;
+    box-shadow: 0 0px 10px #e6e6e6;
+}
 
 
 
+.izquierda h1 {
+
+    margin-bottom: 20px;
+    padding: 20px;
+}
 
 
+.red {
+    display: flex;
+    margin-bottom: 20px;
+}
 
+.red1 {
+    display: flex;
+    margin-bottom: 20px;
+}
 
+.red img {
+    margin-top: -5px;
+}
 
-/*trabajo de ricardo */
+.red1 img {
+    margin-top: -5px;
+}
+
+.red3 {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.red3 img {
+    height: 30px;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+
+.red3 a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.red a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.red1 a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 
 .tipo-item:hover::after {
     content: attr(data-tipo);
@@ -1541,7 +1675,18 @@ main {
     filter: brightness(1.5) drop-shadow(0 0 10px rgb(255, 255, 255));
 }
 
-
+.red3 img:hover{
+     cursor: pointer;
+    filter: brightness(1.5) drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+.red1 img:hover{
+     cursor: pointer;
+    filter: brightness(1.5) drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+.red img:hover{
+     cursor: pointer;
+    filter: brightness(1.5) drop-shadow(0 0 10px rgb(255, 255, 255));
+}
 
 .tipo-item {
     position: relative;
