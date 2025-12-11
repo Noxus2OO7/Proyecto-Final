@@ -1593,6 +1593,131 @@ main {
 
 
 
+.Pokemon-slot-geodude {
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgba(167,158, 124)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+
+.Pokemon-slot-geodude {
+    display: flex;
+
+}
+
+
+.Pokemon-slot-geodude div {
+    padding: 5px;
+}
+
+.Pokemon-slot-geodude h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-geodude h3 img {
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-geodude h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-geodude img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.Pokemon-slot-geodude .tipo1 {
+    background-color: rgba(167,158, 124);
+    margin-right: 16px;
+    margin-left: 5px;
+
+}
+
+.Pokemon-slot-geodude .tipo2 {
+    background-color: rgba(231, 114, 53);
+    margin-right: 16px;
+    margin-left: 5px;
+
+}
+
+.Pokemon-slot-slowpoke{
+  display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(97, 115, 255)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+
+.Pokemon-slot-slowpoke {
+    display: flex;
+
+}
+
+
+.Pokemon-slot-slowpoke div {
+    padding: 5px;
+}
+
+.Pokemon-slot-slowpoke h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-slowpoke h3 img {
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-slowpoke h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-slowpoke img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.Pokemon-slot-slowpoke .tipo1 {
+    background-color: rgb(97, 115, 255);
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.Pokemon-slot-slowpoke .tipo2 {
+    background-color: rgb(255, 110, 127);
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+
 /* Chambea kevin */
 .Pokemon-slot:hover {
     background-color: rgb(162, 255, 0);
@@ -1749,6 +1874,19 @@ main {
     transform-style: preserve-3d;
 }
 
+.Pokemon-slot-geodude:hover{
+        background-color: rgb(241, 96, 19);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.Pokemon-slot-slowpoke:hover{
+   background-color: rgb(106, 1, 78);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
 
 /* Chambea Ricardo */
 footer {
