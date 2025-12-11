@@ -150,7 +150,7 @@ document.querySelectorAll('[onclick*="cambiarDato("]').forEach(el => {
             function animation(currentTime) {
                 if (start === null) start = currentTime;
                 const elapsed = currentTime - start;
-                const progress = Math.min(elapsed / duration, 1);
+                const progress = Math.min(elapsed / duration, 100);
                 
                 // Easing: ease-out (más rápido al inicio, más lento al final)
                 const easeProgress = 1 - Math.pow(1 - progress, 3);
