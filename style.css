@@ -42,7 +42,7 @@ header img {
     position: fixed;
     top: 20px;
     right: 20px;
-    background: linear-gradient(135deg, #ff6b6b, #ffd93d);
+    background: linear-gradient(135deg, #ff0b0b, #ffcc00);
     color: white;
     border: none;
     padding: 8px 16px;
@@ -52,6 +52,7 @@ header img {
     z-index: 101;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    width: 100px;
 }
 
 .idioma-btn:hover {
