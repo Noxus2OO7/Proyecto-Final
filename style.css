@@ -1408,6 +1408,69 @@ main {
 
 }
 
+.Pokemon-slot-poliwag{
+ display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(0, 123, 255, 0.864)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+
+.Pokemon-slot-poliwag div {
+    padding: 5px;
+}
+
+.Pokemon-slot-poliwag h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-poliwag h3 img {
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-poliwag h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-poliwag img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+
+.Pokemon-slot-poliwag .tipo1{
+    background-color: rgb(97, 115, 255);
+    margin-right: 15px;
+    margin-left: 5px;
+
+}
+
+
+
+.Pokemon-slot-poliwag .tipo2 {
+    background-color: rgb(224, 33, 97);
+    margin-right: 15px;
+    margin-left: 5px;
+
+}
+
+
 
 
 /* Chambea kevin */
@@ -1545,7 +1608,14 @@ main {
     transform-style: preserve-3d;
 }
 
+.Pokemon-slot-poliwag:hover {
+    background-color: rgb(129, 19, 0);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
 
+/* Chambea Ricardo */
 footer {
     color: whitesmoke;
     margin-top: 5%;
