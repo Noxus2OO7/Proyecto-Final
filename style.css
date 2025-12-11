@@ -492,13 +492,13 @@ main {
     height: 200px;
     margin-top: 20px;
 }
-
 .Pokemon-slot-bicho .tipo1 {
     background-color: rgba(121, 164, 73);
     margin-right: 15px;
     margin-left: 5px;
-
+    
 }
+
 
 .Pokemon-slot-bicho .tipo2 {
     background-color: rgb(255, 0, 187);
@@ -1408,6 +1408,10 @@ main {
 
 }
 
+.machop{
+    margin: auto;
+}
+
 .Pokemon-slot-poliwag{
  display: flex;
     padding: 10px;
@@ -1467,9 +1471,124 @@ main {
     background-color: rgb(224, 33, 97);
     margin-right: 15px;
     margin-left: 5px;
+}
+
+.Pokemon-slot-psiquico{
+    display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(255, 110, 127)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+    transition: all 0.3s;
 
 }
 
+.Pokemon-slot-psiquico {
+    display: flex;
+
+}
+
+
+.Pokemon-slot-psiquico div {
+    padding: 5px;
+}
+
+.Pokemon-slot-psiquico h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-psiquico h3 img {
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-psiquico h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-psiquico img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+.Pokemon-slot-psiquico .tipo1 {
+    background-color: rgb(255, 110, 127);
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+
+.Pokemon-slot-tentacool {
+ display: flex;
+    padding: 10px;
+    border-radius: 30px;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    height: 380px;
+    border: solid 1px #ffffff;
+
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 255, 0.3), rgb(0, 123, 255, 0.864)), url(./Imagenes/pokeball-blanca.png);
+    background-repeat: no-repeat;
+    width: 255px;
+    transition: all 0.3s;
+
+}
+
+.Pokemon-slot-tentacool div {
+    padding: 5px;
+}
+
+.Pokemon-slot-tentacool h3 {
+    border-radius: 20px;
+    padding: 3px;
+    width: 100px;
+    display: flex;
+}
+
+.Pokemon-slot-tentacool h3 img {
+    height: 25px;
+    margin-top: 0;
+}
+
+
+.Pokemon-slot-tentacool h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.Pokemon-slot-tentacool img {
+    height: 200px;
+    margin-top: 20px;
+}
+
+
+.Pokemon-slot-tentacool .tipo1{
+    background-color: rgb(97, 115, 255);
+    margin-right: 15px;
+    margin-left: 5px;
+
+}
+
+
+
+.Pokemon-slot-tentacool .tipo2 {
+    background-color: rgb(168, 76, 214);
+    margin-right: 15px;
+    margin-left: 5px;
+}
 
 
 
@@ -1614,6 +1733,21 @@ main {
     transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     transform-style: preserve-3d;
 }
+
+.Pokemon-slot-psiquico:hover{
+   background-color: rgb(106, 1, 78);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+.Pokemon-slot-tentacool:hover{
+    background-color: rgb(189, 0, 227, 0.671);
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.9, 0.9, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
 
 /* Chambea Ricardo */
 footer {
