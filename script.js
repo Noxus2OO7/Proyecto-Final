@@ -144,7 +144,7 @@ document.querySelectorAll('[onclick*="cambiarDato("]').forEach(el => {
             const targetPosition = target.getBoundingClientRect().top + window.scrollY;
             const startPosition = window.scrollY;
             const distance = targetPosition - startPosition;
-            const duration = 1200; // duración en ms (1.2 segundos)
+            const duration = 1; // duración en ms (1.2 segundos)
             let start = null;
             
             function animation(currentTime) {

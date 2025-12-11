@@ -12,82 +12,62 @@
 
 <body>
 
-
   <header>
     <img src="./Imagenes/pngegg.png" alt="">
+    <button id="idioma-btn" class="idioma-btn">EN</button>
   </header>
-
-
 
   <div class="Pokemon-select" id="pokemon-select">
 
-    <div class="Pokedex-info" id="pokemon-info">
-
-      <div class="Pokedex-texto" id="pokemon-texto">
-
-        <h1>Descripción en la Pokedex</h1>
-
-        <h3 id="descripcion-pokemon">Bulbasaur es un Pokémon inicial de tipo Planta/Veneno, conocido por el bulbo que
-          tiene en su lomo, plantado al
-          nacer, que crece absorbiendo energía solar y le permite pasar días sin comer, además de usarlo para ataques
-          como
-          Drenadoras o Rayo Solar. Se asemeja a un anfibio con piel turquesa y manchas verdes, grandes ojos rojos y tres
-          garras en cada pata, siendo atraído por fuentes de agua y jardines, y evolucionando a Ivysaur y luego a
-          Venusaur. </h3>
-      </div>
-
-
-      <div class="pokedex-cat" id="pokemon-cat">
-
-
-        <h3>PS:</h3>
-
+    <div class="card" id="pokemon-info">
+      <div class="face front" id="pokemon-cat">
+        <h3 data-es="PS:" data-en="HP:">PS:</h3>
         <div class="barra-fuera">
-          <div class="barra-dentro" id="barra-dentro">
+          <div class="barra-dentro">
             <p id="PS">0</p>
           </div>
         </div>
 
-        <h3>Ataque: </h3>
-
+        <h3 data-es="Ataque: " data-en="Attack: ">Ataque: </h3>
         <div class="barra-fuera">
-          <div class="barra-dentro" id="barra-dentro">
+          <div class="barra-dentro">
             <p id="ataque">0</p>
           </div>
         </div>
 
-        <h3>Defensa: </h3>
-
+        <h3 data-es="Defensa: " data-en="Defense: ">Defensa: </h3>
         <div class="barra-fuera">
-          <div class="barra-dentro" id="barra-dentro">
+          <div class="barra-dentro">
             <p id="defensa">0</p>
           </div>
         </div>
 
-        <h3>Ataque.S: </h3>
-
+        <h3 data-es="Ataque.S: " data-en="Sp. Atk: ">Ataque.S: </h3>
         <div class="barra-fuera">
-          <div class="barra-dentro" id="barra-dentro">
+          <div class="barra-dentro">
             <p id="ataque.s">0</p>
           </div>
         </div>
 
-        <h3>Defensa.S: </h3>
-
+        <h3 data-es="Defensa.S: " data-en="Sp. Def: ">Defensa.S: </h3>
         <div class="barra-fuera">
-          <div class="barra-dentro" id="barra-dentro">
+          <div class="barra-dentro">
             <p id="defensa.s">0</p>
           </div>
         </div>
 
-        <h3>Velocidad: </h3>
-
+        <h3 data-es="Velocidad: " data-en="Speed: ">Velocidad: </h3>
         <div class="barra-fuera">
-          <div class="barra-dentro" id="barra-dentro">
+          <div class="barra-dentro">
             <p id="Velocidad">0</p>
           </div>
         </div>
+      </div>
 
+      <div class="face back">
+
+        <h1 data-es="Descripción en la Pokedex" data-en="Pokedex Description">Descripción en la Pokedex</h1>
+    <h3 id="descripcion-pokemon"> </h3>
       </div>
     </div>
 
@@ -95,55 +75,31 @@
       <img src="./Imagenes/pokeball-blanca.png" alt="" id="foto-pokemon">
     </div>
 
-
   </div>
-
 
   <main>
 
     <div class="cintillo">
-      <span class="tipo-item" data-tipo="Agua"><img src="./Imagenes/Tipo-agua.png" alt="Agua"></span>
-      <span class="tipo-item" data-tipo="Fuego"><img src="./Imagenes/fuego_icon.png" alt="Fuego"></span>
-      <span class="tipo-item" data-tipo="Veneno"><img src="./Imagenes/Veneno_icono.png" alt="Veneno"></span>
-      <span class="tipo-item" data-tipo="Psiquico"><img src="./Imagenes/psiquico_icon.png" alt="Psiquico"></span>
-      <span class="tipo-item" data-tipo="Bicho"><img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="Bicho"></span>
-      <span class="tipo-item" data-tipo="Volador"><img src="./Imagenes/tipo_volador.png" alt="Volador"></span>
-      <span class="tipo-item" data-tipo="Normal"><img src="./Imagenes/Tipo-normal.png" alt="Normal"></span>
-      <span class="tipo-item" data-tipo="Eléctrico"><img src="./Imagenes/Electrico_icono.jpg" alt="Eléctrico"></span>
-      <span class="tipo-item" data-tipo="Tierra"><img src="./Imagenes/icono_tierra.jpg" alt="Tierra"></span>
-      <span class="tipo-item" data-tipo="Roca"><img src="./Imagenes/icono_roca.jpg" alt="Roca"></span>
-      <span class="tipo-item" data-tipo="Planta"><img src="./Imagenes/Planta_icono.jpg" alt="Planta"></span>
-      <span class="tipo-item" data-tipo="Fantasma"><img src="./Imagenes/fantasma-icono.png" alt="Fantasma"></span>
-      <span class="tipo-item" data-tipo="Lucha"><img src="./Imagenes/lucha-icono.png" alt="Lucha"></span>
-      <span class="tipo-item" data-tipo="Hielo"><img src="./Imagenes/hielo-icono.png" alt="Hielo"></span>
-      <span class="tipo-item" data-tipo="Hada"><img src="./Imagenes/tipo_hada.png" alt="Hada"></span>
-      <span class="tipo-item" data-tipo="Dragón"><img src="./Imagenes/dragon-icono.png" alt="Dragón"></span>
+      <span class="tipo-item" data-tipo="Agua" data-es="Agua" data-en="Water"><img src="./Imagenes/Tipo-agua.png" alt="Agua"></span>
+      <span class="tipo-item" data-tipo="Fuego" data-es="Fuego" data-en="Fire"><img src="./Imagenes/fuego_icon.png" alt="Fuego"></span>
+      <span class="tipo-item" data-tipo="Veneno" data-es="Veneno" data-en="Poison"><img src="./Imagenes/Veneno_icono.png" alt="Veneno"></span>
+      <span class="tipo-item" data-tipo="Psíquico" data-es="Psíquico" data-en="Psychic"><img src="./Imagenes/psiquico_icon.png" alt="Psíquico"></span>
+      <span class="tipo-item" data-tipo="Bicho" data-es="Bicho" data-en="Bug"><img src="./Imagenes/Tipo_bicho_icono_EpEc.png" alt="Bicho"></span>
+      <span class="tipo-item" data-tipo="Volador" data-es="Volador" data-en="Flying"><img src="./Imagenes/tipo_volador.png" alt="Volador"></span>
+      <span class="tipo-item" data-tipo="Normal" data-es="Normal" data-en="Normal"><img src="./Imagenes/Tipo-normal.png" alt="Normal"></span>
+      <span class="tipo-item" data-tipo="Eléctrico" data-es="Eléctrico" data-en="Electric"><img src="./Imagenes/Electrico_icono.jpg" alt="Eléctrico"></span>
+      <span class="tipo-item" data-tipo="Tierra" data-es="Tierra" data-en="Ground"><img src="./Imagenes/icono_tierra.jpg" alt="Tierra"></span>
+      <span class="tipo-item" data-tipo="Roca" data-es="Roca" data-en="Rock"><img src="./Imagenes/icono_roca.jpg" alt="Roca"></span>
+      <span class="tipo-item" data-tipo="Planta" data-es="Planta" data-en="Grass"><img src="./Imagenes/Planta_icono.jpg" alt="Planta"></span>
+      <span class="tipo-item" data-tipo="Fantasma" data-es="Fantasma" data-en="Ghost"><img src="./Imagenes/fantasma-icono.png" alt="Fantasma"></span>
+      <span class="tipo-item" data-tipo="Lucha" data-es="Lucha" data-en="Fighting"><img src="./Imagenes/lucha-icono.png" alt="Lucha"></span>
+      <span class="tipo-item" data-tipo="Hielo" data-es="Hielo" data-en="Ice"><img src="./Imagenes/hielo-icono.png" alt="Hielo"></span>
+      <span class="tipo-item" data-tipo="Hada" data-es="Hada" data-en="Fairy"><img src="./Imagenes/tipo_hada.png" alt="Hada"></span>
+      <span class="tipo-item" data-tipo="Dragón" data-es="Dragón" data-en="Dragon"><img src="./Imagenes/dragon-icono.png" alt="Dragón"></span>
     </div>
 
-    <!-- Linea evolutiva de Nidoran -->
-
-
-
-    <div class="Pokemon-slot-veneno"
-      onclick="cambiarDato('./sprites-select/Pkm-30.gif','Nidorina se vuelve más dócil al perder sus púas en combate.',70,62,67,55,55,56)">
-      <img src="./Imagenes/Nidorina.webp" alt="">
-      <h2>•Nidorina•</h2>
-      <div class="Pokemon-tipos">
-        <h3 class="tipo1"><img src="./Imagenes/Veneno_icono.png" alt="">Veneno</h3>
-      </div>
-      <div class="Datos-todo">
-        <div class="Pokemon-datos">
-          <h3>0.8 M</h3>
-          <h3>20 KG</h3>
-        </div>
-        <div class="Datos-P">
-          <h3>Altura</h3>
-          <h3>Peso</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="Pokemon-slot-veneno"
+    <!--Final de la linea evolutiva de Nidoran (Macho y Hembra)-->
+<div class="Pokemon-slot-veneno"
       onclick="cambiarDato('./sprites-select/Pkm-31.gif','Nidoqueen protege a su familia con su duro cuerpo blindado.',90,92,87,75,85,76)">
       <img src="./Imagenes/Nidoqueen.webp" alt="">
       <h2>•Nidoqueen•</h2>
@@ -162,8 +118,6 @@
         </div>
       </div>
     </div>
-
-
 
     <div class="Pokemon-slot-veneno"
       onclick="cambiarDato('./sprites-select/Pkm-33.gif','Nidorino embiste usando su cuerno duro como diamante.',61,72,57,55,55,65)">
@@ -229,7 +183,6 @@
 
     </div>
 
-
     <div class="Pokemon-slot-clefairy"
       onclick="cambiarDato('./sprites-select/Pkm-36.gif','Nidoran♂ es una especie venenosa; difiere ligeramente en estadísticas y evolución respecto a la hembra.',46,57,40,40,40,50)">
 
@@ -273,7 +226,6 @@
       </div>
 
     </div>
-
 
     <div class="Pokemon-slot-vulpix"
       onclick="cambiarDato('./sprites-select/Pkm-38.gif','Nidoran♂ es una especie venenosa; difiere ligeramente en estadísticas y evolución respecto a la hembra.',46,57,40,40,40,50)">
@@ -752,15 +704,44 @@
       </div>
     </div>
 
-
   </main>
-  <a href="./index.html" class="anterior"></a>
-  <a href="./Index3.html" class="siguiente"></a>
+
+<footer>
+ <div class="izquierda">
+  <h1 data-es="Descripción de la página" data-en="Page description">Descripción de la página</h1>
+  <h3 data-es="Lista de 151 Pokemon, es decir, toda la primera generación completa, sin megas, formas regionales ni gigamax (era mucho trabajo para tan poco tiempo)" data-en="List of 151 Pokémon — the full first generation, no megas, regional forms or Gigantamax (that was a lot of work for little time)">Lista de 151 Pokemon, es decir, toda la primera generación completa, sin megas, formas regionales ni gigamax (era mucho trabajo para tan poco tiempo)</h3>
+  
+  
+ </div>
+
+
+<div class="medio">
+<h2 data-es="Nuestras Redes" data-en="Our Networks">Nuestras Redes</h2>
+
+<div class="red1">
+  <img src="./redes/Insta-removebg-preview.png" alt=""> <a href="https://www.instagram.com/ricawnil/"> <h4 data-es="@Ricawnil" data-en="@Ricawnil">@Ricawnil</h4> </a> 
+
+</div>
+<div class="red">
+  <img src="./redes/Insta-removebg-preview.png" alt=""> <a href="https://www.instagram.com/mr_kevin094/"> <h4 data-es="@Mr_Kevin094" data-en="@Mr_Kevin094">@Mr_Kevin094</h4></a>  
+</div>
+<hr>
+<div class="red3">
+  <img src="./redes/logo-github-blanco.png" alt=""> <a href="https://github.com/Track1at01"> <h4 data-es="@Track1at01" data-en="@Track1at01">@Track1at01</h4> </a> 
+
+</div>
+<div class="red3">
+  <img src="./redes/logo-github-blanco.png" alt=""> <a href="https://github.com/Noxus2OO7"> <h4 data-es="@Noxus2007" data-en="@Noxus2007">@Noxus2007</h4></a>  
+</div>
+ </div>
+ 
+</footer>
+
+
+
+  <a href="" class="anterior"></a>
+  <a href="./index2.html" class="siguiente"></a>
+
 </body>
-
-
-
-
-
 
 </html>
