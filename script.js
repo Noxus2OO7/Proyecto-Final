@@ -177,7 +177,3 @@ document.querySelectorAll('[onclick*="cambiarDato("]').forEach(el => {
 
     
     
-    
-    
-    
-    
